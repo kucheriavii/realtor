@@ -1,0 +1,52 @@
+
+.main-screen{
+	max-height: 100vh;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+.main-navbar{
+	height: $menuHeight;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0,0,0,.1);
+	width: 100%;
+	position: relative;
+	z-index: 2;
+	.menu{
+		@extend .menu-style;
+		width: 100%;
+		justify-content: space-around;
+
+	}
+}
+
+//main page text
+.main-page__description-wrap {
+    min-height: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: $menuHeight;
+    margin-top: -$menuHeight;
+    font-size: 20px;
+    .big-text{
+    	//font-size: 55px;
+    }
+    .main-page__description{
+		width: auto;
+		background-color: rgba(0,0,0,.4);
+		text-align: center;
+		font-size: 32px;
+		color: #fff;
+    }
+}
+
+
+

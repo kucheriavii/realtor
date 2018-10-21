@@ -1,0 +1,14 @@
+.about-me{
+	height: 100vh;
+	background-image: url("../img/photo.jpg");
+	background-size: cover;
+	width: 100%;
+}
+.about-me__block{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	.info{
+		background-color: rgba(255,255,255,.5);
+	}
+}
