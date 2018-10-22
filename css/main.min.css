@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "roboto-example";
   font-weight: normal;
@@ -6280,7 +6281,8 @@ strong {
 
 .about-me {
   height: 100vh;
-  background-image: url("../img/about-me-background.jpg");
+  background-image: url("../img/about-me-background2.jpg");
+  background-position-y: 50%;
   -webkit-background-size: cover;
           background-size: cover;
   width: 100%;
@@ -6296,10 +6298,228 @@ strong {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #fff;
 }
 
 .about-me__block .info {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(32, 32, 43, 0.8);
+  padding-left: 69px;
+  padding-right: 50px;
+  padding-top: 51px;
+  padding-bottom: 57px;
+}
+
+.about-me__block .info h3 {
+  font: 40px "montserrat-regular", sans-serif;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+.about-me__block .info .about-me__list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.about-me__block .info .about-me__list .about-me__item {
+  color: #fff;
+  font: 15px/25px "opensans-regular", sans-serif;
+  font-weight: 400;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.about-me__block .info .about-me__list .about-me__item:before {
+  content: "—";
+  font-size: 16px;
+  display: inline-block;
+  width: 16px;
+  margin-left: -32px;
+  margin-right: 16px;
+}
+
+.reasons-to-trust {
+  background-image: url("../img/map-img.png");
+}
+
+.reasons-to-trust .reasons-to-trust__fon-wrap {
+  min-width: 100%;
+  min-height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  padding-top: 92px;
+}
+
+.reasons-block {
+  width: 710px;
+}
+
+.reasons-block .reasons-to-trust__header {
+  color: #20202b;
+  font: 40px "montserrat-regular", sans-serif;
+  font-weight: 500;
+  line-height: 50px;
+  margin-bottom: 50px;
+}
+
+.reasons-block .reasons-to-trust__header .gray-text {
+  color: #7e89a1;
+  font: 40px "montserrat-bold", sans-serif;
+}
+
+.reasons-block .reasons-to-trust__list {
+  color: #20202b;
+  font: 16px/25px "opensans-regular", sans-serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  margin-right: 12px;
+}
+
+.reasons-block .reasons-to-trust__list p {
+  margin-bottom: 10px;
+}
+
+.reasons-block .reasons-to-trust__item {
+  margin-bottom: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reasons-block .reasons-to-trust__item-count {
+  display: inline-block;
+  height: 100%;
+  font: 16px/25px "opensans-regular", sans-serif;
+  margin-right: 28px;
+  font-weight: 700;
+  margin-left: 18px;
+  margin-bottom: 0;
+}
+
+.reasons-to-trust__ad {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 26px;
+}
+
+.reasons-to-trust__BTI {
+  width: 370px;
+  height: 200px;
+  background-image: url("../img/7reasons-section-bgc.png");
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.reasons-to-trust__BTI .reasons-to-trust__BTI-wrap {
+  position: absolute;
+  top: 33px;
+  right: 0px;
+  width: 220px;
+}
+
+.reasons-to-trust__BTI .reasons-to-trust__BTI-header {
+  display: block;
+  font-weight: 700;
+  font: 24px "montserrat-bold", sans-serif;
+  line-height: 23px;
+  text-shadow: 0 0 40px #000000;
+  color: #fff;
+  margin-bottom: 25px;
+  text-align: right;
+  padding-right: 31px;
+  margin-left: -16px;
+}
+
+.reasons-to-trust__BTI .reasons-to-trust__BTI-desc {
+  background-color: #fff;
+  display: block;
+  height: 70px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 13px 31px 13px 8px;
+}
+
+.reasons-to-trust__BTI .reasons-to-trust__BTI-desc:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 70px;
+  right: 100%;
+  position: absolute;
+  background-image: url("../img/icons/png/ribbon_head.png");
+}
+
+.reasons-to-trust__BTI .reasons-to-trust__BTI-desc .big-text {
+  display: block;
+  font: 20px "montserrat-bold", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.reasons-to-trust__BTI .reasons-to-trust__BTI-desc span {
+  font: 14px/18px "opensans-regular", sans-serif;
+  color: #20202b;
+  text-align: right;
+}
+
+.reasons-to-trust__quick-shell {
+  width: 370px;
+  height: 200px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+  background-color: #7e89a1;
+  padding: 27px 26px 30px;
+}
+
+.reasons-to-trust__quick-shell .quick-shell-header {
+  font: 18px "montserrat-bold", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.reasons-to-trust__quick-shell .quick-shell-text {
+  font: 14px/20px "opensans-regular", sans-serif;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.re-hash {
+  background-color: #7e89a1;
+}
+
+.re-hash__header {
+  font: 40px "montserrat-regular", sans-serif;
+  letter-spacing: .128px;
+  font-weight: 500;
+  display: block;
+  margin: 60px auto 32px;
+  color: #fff;
+  max-width: 760px;
+  text-align: center;
 }
 
 .reasons-to-trust, .re-hash, .positive-block, .additional-options, .most-important-things, .my-proposition, .official-partners, .feedback, .calculator, .attention {
@@ -6307,7 +6527,8 @@ strong {
 }
 
 .main-navbar--fixed {
-  background-color: #f00;
+  background-color: #fff;
+  color: #7e89a1;
   position: fixed;
   top: 0;
   display: none;
@@ -6315,6 +6536,18 @@ strong {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.main-navbar--fixed .menu__link {
+  color: #7e89a1;
+}
+
+.main-navbar--fixed .contacts {
+  color: #7e89a1;
+}
+
+.main-navbar--fixed .contacts .contacts__phone {
+  color: #7e89a1;
 }
 
 .menu-style, .main-navbar .menu, .main-navbar--fixed .menu {
@@ -6325,6 +6558,34 @@ strong {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+.button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: auto 54px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background-color: #ff8666;
+  color: #fff;
+  height: 50px;
+}
+
+.button:hover, .button:focus, .button:active {
+  outline: 0;
+  text-decoration: none;
+  color: #fff;
 }
 
 .disabled {

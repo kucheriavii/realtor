@@ -52,23 +52,54 @@ b, strong {
 /******main section*****/
 @import "main-section";
 @import "about-me-section";
+@import "seven-reasons";
+@import "re-hash";
 .reasons-to-trust,.re-hash,.positive-block,.additional-options,.most-important-things,.my-proposition,.official-partners,.feedback,.calculator,.attention{
 	padding-top: 80px;
 }
 
 .main-navbar--fixed{
 	@extend .main-navbar;
-	background-color: #f00;
+	background-color: #fff;
+	color: #7e89a1;
 	position: fixed;
 	top: 0;
 	display: none;
 	align-items: center;
+	.menu__link{
+		color: #7e89a1;
+	}
+	.contacts{
+		color: #7e89a1;
+		.contacts__phone{
+			color: #7e89a1;
+		}
+	}
 }
 .menu-style{
 	display: flex;
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
+}
+
+
+
+.button{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: auto 54px;
+	align-items: center;
+	border-radius: 10px;
+	background-color: #ff8666;
+	color: $accentColor;
+	height: 50px;
+	&:hover,&:focus,&:active{
+		outline: 0;
+		text-decoration: none;
+		color: #fff;
+	}
 }
 .disabled{
 	opacity: 0;

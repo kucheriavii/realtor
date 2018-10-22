@@ -1,0 +1,131 @@
+.reasons-to-trust{
+	background-image: url("../img/map-img.png");
+	.reasons-to-trust__fon-wrap{
+		min-width: 100%;
+		min-height: 100%; 
+		background: rgba(255,255,255,0.7);
+		padding-top: 92px;
+	}
+}
+
+.reasons-block{
+	width: 710px;
+	.reasons-to-trust__header{
+		color: #20202b;
+		font: 40px "montserrat-regular", sans-serif;
+		font-weight: 500;
+		line-height: 50px;
+		margin-bottom: 50px;
+		.gray-text{
+			color: #7e89a1;
+			font: 40px "montserrat-bold", sans-serif;
+		}
+	}
+	.reasons-to-trust__list{
+		color: #20202b;
+		font: 16px/25px "opensans-regular", sans-serif;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: block;
+		margin-right: 12px;
+		p{
+			margin-bottom: 10px;
+			//font-size: 16px/25px "opensans-regular", sans-serif;
+		}
+	}
+	.reasons-to-trust__item{
+		margin-bottom: 0px;
+		display: flex;
+	}
+	.reasons-to-trust__item-count{
+		display: inline-block;
+		height: 100%;
+		font: 16px/25px "opensans-regular", sans-serif;
+		margin-right: 28px;
+		font-weight: 700;
+		margin-left: 18px;
+		margin-bottom: 0;
+	}
+}
+.reasons-to-trust__ad{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: flex-end;
+	margin-top: 26px;
+}
+.reasons-to-trust__BTI{
+	width: 370px;
+	height: 200px;
+	background-image: url("../img/7reasons-section-bgc.png");
+	position: relative;
+	margin-bottom: 30px;
+	.reasons-to-trust__BTI-wrap{
+		position: absolute;
+		top: 33px;
+		right: 0px;
+		width: 220px;
+	}
+	.reasons-to-trust__BTI-header{
+		display: block;
+		font-weight: 700;
+		font: 24px "montserrat-bold", sans-serif;
+		line-height: 23px;
+		text-shadow: 0 0 40px #000000;
+		color: $accentColor;
+		margin-bottom: 25px;
+		text-align: right;
+		padding-right: 31px;
+		margin-left: -16px;
+	}
+	.reasons-to-trust__BTI-desc{
+		background-color: #fff;
+		display: block;
+		height: 70px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		padding: 13px 31px 13px 8px;
+		&:before{
+			content: "";
+			display: block;
+			width: 30px;
+			height: 70px;
+			right: 100%;
+			position: absolute;
+			background-image: url("../img/icons/png/ribbon_head.png");
+		}
+		.big-text{
+			display: block;
+			font: 20px "montserrat-bold", sans-serif;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+	.reasons-to-trust__BTI-desc span{
+		font: 14px/18px "opensans-regular", sans-serif;
+		color: #20202b;
+		text-align: right;
+	}
+}
+.reasons-to-trust__quick-shell{
+	width: 370px;
+	height: 200px;
+	border-radius: 10px;
+	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+	background-color: #7e89a1;
+	padding: 27px 26px 30px;
+	.quick-shell-header{
+		font: 18px "montserrat-bold", sans-serif;
+		color: $accentColor;
+		text-align: center;
+	}
+	.quick-shell-text{
+		font: 14px/20px "opensans-regular", sans-serif;
+		color: $accentColor;
+		display: block;
+		text-align: center;
+		margin-bottom: 22px;
+	}
+}
