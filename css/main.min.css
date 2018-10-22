@@ -6279,6 +6279,17 @@ strong {
   font-size: 63px;
 }
 
+.main-page__scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 70px;
+}
+
+.main-page__scroll img {
+  width: 14px;
+  height: 39px;
+}
+
 .about-me {
   height: 100vh;
   background-image: url("../img/about-me-background2.jpg");
@@ -6520,6 +6531,95 @@ strong {
   color: #fff;
   max-width: 760px;
   text-align: center;
+}
+
+.re-hash__cart-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.re-hash__cart {
+  display: block;
+  width: 370px;
+  height: 210px;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background-color: #ffffff;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  padding: 20px 30px;
+}
+
+.re-hash__cart:first-child {
+  margin-left: 0;
+}
+
+.re-hash__cart:nth-child(4) {
+  margin-left: 0;
+}
+
+.re-hash__cart .re-hash__cart-text {
+  font: 14px/25px "opensans-regular", sans-serif;
+  color: #20202b;
+  font-weight: 400;
+}
+
+.re-hash__cart .re-hash__cart-img-wrap {
+  width: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.re-hash__cart .re-hash__cart-img-wrap img {
+  height: 60px;
+  margin-bottom: 14px;
+}
+
+.re-hash__cart .re-hash__cart-tag {
+  padding-left: 23px;
+  padding-right: 23px;
+  height: 30px;
+  width: 140px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 134, 102, 0.2);
+  color: #e77051;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  font: 11px "montserrat-bold", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .reasons-to-trust, .re-hash, .positive-block, .additional-options, .most-important-things, .my-proposition, .official-partners, .feedback, .calculator, .attention {
