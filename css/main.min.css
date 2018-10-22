@@ -7,6 +7,38 @@
 }
 
 @font-face {
+  font-family: "montserrat-regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Montserrat-Regular/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat-Regular/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "montserrat-bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Montserrat-Bold/Montserrat-Bold.eot");
+  src: url("../fonts/Montserrat-Bold/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "opensans-bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSans-Bold/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSans-Bold/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold/OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "opensans-regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSans-Regular/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans-Regular/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "roboto-example";
   font-weight: bold;
   font-style: normal;
@@ -373,8 +405,8 @@ html {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0px;
+  padding-left: 0px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -399,14 +431,14 @@ html {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1170px;
   }
 }
 
 .container-fluid {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0px;
+  padding-left: 0px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -419,8 +451,8 @@ html {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .no-gutters {
@@ -443,8 +475,8 @@ html {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .col {
@@ -6126,6 +6158,7 @@ strong {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  background-color: rgba(35, 35, 57, 0.4);
 }
 
 .main-navbar, .main-navbar--fixed {
@@ -6142,7 +6175,6 @@ strong {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: rgba(0, 0, 0, 0.1);
   width: 100%;
   position: relative;
   z-index: 2;
@@ -6150,46 +6182,105 @@ strong {
 
 .main-navbar .menu, .main-navbar--fixed .menu {
   width: 100%;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-}
-
-.main-page__description-wrap {
-  min-height: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 580px;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  top: 80px;
-  margin-top: -80px;
-  font-size: 20px;
+  height: 100%;
 }
 
-.main-page__description-wrap .main-page__description {
-  width: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-  text-align: center;
-  font-size: 32px;
+.main-navbar .menu__link, .main-navbar--fixed .menu__link {
+  text-decoration: none;
   color: #fff;
+  font: 14px/25px "montserrat-regular", sans-serif;
+  font-weight: 500;
+}
+
+.main-navbar .menu__link:active, .main-navbar--fixed .menu__link:active, .main-navbar .menu__link:focus, .main-navbar--fixed .menu__link:focus {
+  text-decoration: none;
+  outline: 0;
+}
+
+.main-navbar .menu__link:hover, .main-navbar--fixed .menu__link:hover {
+  text-decoration: underline;
+}
+
+.main-navbar .logo-icon, .main-navbar--fixed .logo-icon {
+  height: 37px;
+  width: 136px;
+  fill: #fff;
+}
+
+.main-navbar .contacts, .main-navbar--fixed .contacts {
+  color: #fff;
+  text-align: right;
+}
+
+.main-navbar .contacts .contacts__phone, .main-navbar--fixed .contacts .contacts__phone {
+  display: block;
+  font: 16px "montserrat-bold", sans-serif;
+  line-height: 25px;
+  color: #fff;
+}
+
+.main-navbar .contacts .contacts__phone:active, .main-navbar--fixed .contacts .contacts__phone:active, .main-navbar .contacts .contacts__phone:hover, .main-navbar--fixed .contacts .contacts__phone:hover, .main-navbar .contacts .contacts__phone:focus, .main-navbar--fixed .contacts .contacts__phone:focus {
+  text-decoration: none;
+  outline: 0;
+}
+
+.main-navbar .contacts .contacts__phone:hover, .main-navbar--fixed .contacts .contacts__phone:hover {
+  text-decoration: underline;
+}
+
+.main-navbar .contacts .contacts__address, .main-navbar--fixed .contacts .contacts__address {
+  font: 14px "opensans-regular", sans-serif;
+  margin-top: 4px;
+}
+
+.main-page__description-wrap {
+  width: 569px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main-page__description-wrap .main-page__description-name {
+  width: 100%;
+  text-align: center;
+  text-shadow: 0 0 34px rgba(0, 0, 0, 0.4);
+  font: 40px "montserrat-bold", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #fff;
+}
+
+.main-page__description-wrap .main-page__description-main-text {
+  font: 46px "opensans-bold", sans-serif;
+  color: #fff;
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  padding-bottom: 29px;
+  border-bottom: 2px solid #fff;
+}
+
+.main-page__description-wrap .main-page__description-main-text .big-text {
+  font-size: 63px;
 }
 
 .about-me {
   height: 100vh;
-  background-image: url("../img/photo.jpg");
+  background-image: url("../img/about-me-background.jpg");
   -webkit-background-size: cover;
           background-size: cover;
   width: 100%;
@@ -6211,7 +6302,7 @@ strong {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.reasons-to-trust {
+.reasons-to-trust, .re-hash, .positive-block, .additional-options, .most-important-things, .my-proposition, .official-partners, .feedback, .calculator, .attention {
   padding-top: 80px;
 }
 

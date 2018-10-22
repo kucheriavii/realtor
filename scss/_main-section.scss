@@ -4,47 +4,97 @@
 	min-height: 100vh;
 	margin: 0;
 	padding: 0;
+    background-color: rgba(35,35,57,.4);
 }
 .main-navbar{
 	height: $menuHeight;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: rgba(0,0,0,.1);
 	width: 100%;
 	position: relative;
 	z-index: 2;
 	.menu{
 		@extend .menu-style;
 		width: 100%;
-		justify-content: space-around;
-
+		justify-content: space-between;
+		width: 580px;
+		align-items: center;
+		height: 100%;
 	}
+	.menu__link{
+		text-decoration: none;
+		color: $accentColor;
+		font: 14px/25px "montserrat-regular", sans-serif;
+		font-weight: 500;
+		&:active, &:focus{
+			text-decoration: none;
+			outline: 0;
+		}
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	.logo-icon{
+		height: 37px;
+		width: 136px;
+		fill: #fff;
+	}
+
+	.contacts{
+		color: $accentColor;
+		text-align: right;
+		.contacts__phone{
+			display: block;
+			font: 16px "montserrat-bold", sans-serif;
+			line-height: 25px;
+			color: $accentColor;
+			&:active, &:hover, &:focus{
+				text-decoration: none;
+				outline: 0;
+			}
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		.contacts__address{
+			font: 14px "opensans-regular", sans-serif;
+			margin-top: 4px;
+		}
+	}
+	
 }
 
 //main page text
 .main-page__description-wrap {
-    min-height: 100%;
-    height: 100%;
+    width: 569px;
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: $menuHeight;
-    margin-top: -$menuHeight;
-    font-size: 20px;
-    .big-text{
-    	//font-size: 55px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .main-page__description-name{
+    	width: 100%;
+    	text-align: center;
+    	text-shadow: 0 0 34px rgba(0, 0, 0, 0.4);
+    	font: 40px "montserrat-bold", sans-serif;
+    	color: $accentColor;
+    	text-transform: uppercase;
+    	display: block;
+    	padding-bottom: 5px;
+    	border-bottom: 2px solid $accentColor;
+
     }
-    .main-page__description{
-		width: auto;
-		background-color: rgba(0,0,0,.4);
-		text-align: center;
-		font-size: 32px;
-		color: #fff;
+    .main-page__description-main-text{
+		font: 46px "opensans-bold", sans-serif;
+		color: $accentColor;
+		display: block;
+		width: 100%;
+		text-transform: uppercase;
+		padding-bottom: 29px;
+    	border-bottom: 2px solid $accentColor;
+	    .big-text{
+	    	font-size: 63px;
+	    }
     }
 }
 

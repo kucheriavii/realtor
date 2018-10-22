@@ -52,8 +52,9 @@ b, strong {
 /******main section*****/
 @import "main-section";
 @import "about-me-section";
-.reasons-to-trust{
-padding-top: 80px;}
+.reasons-to-trust,.re-hash,.positive-block,.additional-options,.most-important-things,.my-proposition,.official-partners,.feedback,.calculator,.attention{
+	padding-top: 80px;
+}
 
 .main-navbar--fixed{
 	@extend .main-navbar;
