@@ -57,10 +57,16 @@ b, strong {
 @import "additional-options";
 @import "positive";
 @import "most-important";
-.reasons-to-trust,.re-hash,.positive-block,.additional-options,.most-important-things,.positive-flat,.my-proposition,.official-partners,.feedback,.calculator,.attention{
+@import "my-proposition";
+.re-hash,.positive-block,.additional-options__shadows,.positive-flat,.my-proposition,.official-partners,.feedback,.calculator,.attention{
 	padding-top: 80px;
 }
-
+.reasons-to-trust .reasons-to-trust__fon-wrap{
+	padding-top: 172px;
+}
+.most-important-things .most-important-things__wrap{
+	padding-top: 80px;
+}
 .main-navbar--fixed{
 	@extend .main-navbar;
 	background-color: #fff;

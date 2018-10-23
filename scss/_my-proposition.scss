@@ -1,0 +1,83 @@
+.my-proposition{
+	.my-proposition__offers{
+		background-image: url("../img/build.png");
+		background-size: 100% auto;
+		height: 500px;
+		background-repeat: no-repeat;
+		&-wrap{
+			background-color: rgba(0,0,0,.3);
+			height: 100%;
+			width: 100%;
+		}
+		.container, .row, .row+div{
+			height: 100%;
+		}
+	}
+}
+
+.offers-info{
+	width: 570px;
+	height: 220px;
+	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+	border-radius: 10px;
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 32px 47px 40px 47px;
+	p{
+		font: 17px/25px "montserrat-bold", sans-serif;
+		color: #20202b;
+		text-align: center;
+	}
+	.red-text{
+		color: #e77051;
+	}
+	.button{
+		background-color: #ff8666;
+		font: 12px/25px "montserrat-bold", sans-serif;
+		color: $accentColor;
+		text-transform: uppercase;
+		position: absolute;
+		bottom: 40px;
+		width: 310px;
+		height: 50px;
+		margin: auto;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.my-proposition__banks{
+	.my-proposition__banks-header{
+		color: #7e89a1;
+		font-family: "montserrat-regular", sans-serif;
+		font-size: 40px;
+		font-weight: 500;
+		line-height: 50px;
+		text-align: center;
+		margin-top: 67px;
+		margin-bottom: 60px;
+	}
+	.my-proposition__banks-list{
+		display: flex;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		justify-content: space-between;
+		list-style-type: none;
+		align-items: center;
+		margin-bottom: 60px;
+	}
+	.button{
+		width: 310px;
+		background-color: #7e89a1;
+		color: #fff;
+		font: 12px/15px "montserrat-regular", sans-serif;
+		margin-left: auto;
+		margin-right: auto;
+		text-transform: uppercase;
+		margin-bottom: 80px;
+	}
+}
