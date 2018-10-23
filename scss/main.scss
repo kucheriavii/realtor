@@ -54,7 +54,10 @@ b, strong {
 @import "about-me-section";
 @import "seven-reasons";
 @import "re-hash";
-.reasons-to-trust,.re-hash,.positive-block,.additional-options,.most-important-things,.my-proposition,.official-partners,.feedback,.calculator,.attention{
+@import "additional-options";
+@import "positive";
+@import "most-important";
+.reasons-to-trust,.re-hash,.positive-block,.additional-options,.most-important-things,.positive-flat,.my-proposition,.official-partners,.feedback,.calculator,.attention{
 	padding-top: 80px;
 }
 
@@ -66,6 +69,7 @@ b, strong {
 	top: 0;
 	display: none;
 	align-items: center;
+	z-index: 99;
 	.menu__link{
 		color: #7e89a1;
 	}
