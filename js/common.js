@@ -24,6 +24,14 @@ $(function() {
 		$(this).before('<span class="reasons-to-trust__item-count">'+count+'.</span>')
 	})
 
+	/************************************************************************/
+
+	$('.feedback__item-list').slick({
+		 infinite: true,
+		  slidesToShow: 3,
+		  slidesToScroll: 1
+	});
+
 	
 
 });
