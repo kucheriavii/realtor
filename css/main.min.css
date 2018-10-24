@@ -6774,8 +6774,9 @@ strong {
 
 .positive-flat {
   background-image: url("../img/girl.png");
-  -webkit-background-size: 100% 100%;
-          background-size: 100%;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: 50%;
   position: relative;
 }
 
@@ -7441,6 +7442,13 @@ strong {
   min-width: 440px;
   width: 440px;
   height: 100%;
+}
+
+.right-clc .calculator__option--geo {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .right-clc .calculator__option--geo .calculator__option-variant {

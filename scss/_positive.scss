@@ -1,6 +1,7 @@
 .positive-flat{
 	background-image: url("../img/girl.png");
-	background-size: 100%;
+	background-size: cover;
+	background-position: 50%;
 	position: relative;
 	.container, .row, .col-12{
 		height: 100%;
