@@ -26,6 +26,7 @@
 	<link rel="stylesheet" href="libs/slick/slick.css">
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 	<link rel="stylesheet" href="css/main.min.css">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=f7fbfbc5-9d53-4d24-bb89-09613591cb3c&lang=en_US" type="text/javascript"></script>
 
 </head>
 
@@ -794,13 +795,145 @@
 	<section class="section attention">
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
-					feedback
-					quasi. distinctio officiis, animi architecto deleniti tenetur quod iusto quam. Maxime rerum, fugiat. Laudantium harum doloremque necessitatibus cum similique, deserunt, temporibus ea exercitationem eius tenetur accusamus dolor. Quasi veniam ullam quis culpa assumenda porro ad dolorum unde expedita officia maiores tempora voluptatum ex nesciunt, tenetur nihil eaque quam, quod ratione. Officia veniam qui ipsam quas assumenda provident possimus fuga alias accusamus eveniet corporis, natus eius, mollitia suscipit perferendis, iste exercitationem inventore repellat laudantium quidem nam reiciendis! Culpa eligendi fugit odio ab quidem minima, provident sapiente recusandae! Modi veritatis, asperiores alias, odio eveniet excepturi. Deserunt vel iste iure autem voluptas totam laboriosam sapiente iusto dignissimos, maxime temporibus asperiores harum, assumenda corrupti placeat molestiae, sed quidem obcaecati provident doloribus? Eum, aliquam corporis voluptatum voluptatibus, aut ullam illum natus, provident nam, modi rerum laboriosam. Nesciunt minus dolor repellat iste ipsam maxime deleniti soluta similique eligendi! Nostrum recusandae aperiam quod at vel officia tempora fuga ipsam debitis obcaecati eaque architecto praesentium accusantium hic reiciendis mollitia nisi accusamus vitae, eveniet cum animi. Officiis laudantium quia tenetur dolore, corporis ex vitae dicta! Dolorum reiciendis delectus error consequuntur facilis officiis dolorem. Veritatis repellendus iste eaque quisquam. Dicta architecto sint quas suscipit, aliquid numquam deleniti eligendi praesentium corporis. In ratione esse nesciunt, earum, ex non velit enim, voluptates temporibus voluptas, deleniti deserunt excepturi incidunt ab. Maxime autem optio, iure quis voluptatem.
+				<div class="col-6 offset-xl-6">
+					<h2 class="attention__header">Уважаемые клиенты!</h2>
+					<span class="attention__desc">
+						Ниже представлена информация, которая, возможно, поможет всем нам сэкономить время.
+					</span>
+					<div class="attention__dont-disturb-block">
+						<p class="attention__dont-disturb-head">
+							Я <span class="red-text">не занимаюсь</span> следующими видами<br> недвижимости и не даю консультаций:
+						</p>
+						<ul class="attention__dont-disturb-list">
+							<li class="attention__dont-disturb-item">Доли в квартирах и домах</li>
+							<li class="attention__dont-disturb-item">Квартиры далее 30 км от МКАД</li>
+							<li class="attention__dont-disturb-item">Дома и участки далее 60 км от МКАД</li>
+							<li class="attention__dont-disturb-item">Недвижимости в других регионах России</li>
+							<li class="attention__dont-disturb-item">Аренда квартир (сдача и съем)</li>
+							<li class="attention__dont-disturb-item">Коммерческая недвижимость</li>
+						</ul>
+					</div>
+					<div class="important-thing">
+						<h3 class="important-head">Это важно</h3>
+						<p>Я не занимаюсь продажей недвижимости без согласия всех собственников и зарегистрированных лиц. Если кто-то из собственников или зарегистрированных лиц против продажи – я ничем помочь не смогу.</p>
+					</div>
 				</div>
 
 			</div>
 		</div>
+	</section>
+
+	<section class="section map">
+		<div class="map-yandex">
+			<div id="map" style="width: 100%; height: 100%"></div>
+		</div>
+
+		<div class="map-contact-wrap">
+			<div class="container h100">
+				<div class="row h100">
+					<div class="col-xl-6 h100 ac">
+						<div class="map-contacts">
+							<h2 class="map-header">Контакты</h2>
+
+							<div class="map-office-box">
+								<span class="map-office__name">Офис продаж:</span>
+
+								<span class="map-office__address">Москва, Новый арбат 21, офис 2347</span>
+								<span class="map-office__time">Я и моя команда будем рады видет вас в офисе в удобное для вас время с 10 до 20, 7 дней в неделю</span>
+
+							</div>	
+
+							<div class="map-consult-box">
+								<span class="map-office__name">Записаться на консультацию и задать вопрос вы можете:</span>
+
+								<div class="map-office-phone">
+									<p class="param">по телефону</p>
+									<a href="#" class="val">+7 (495) 772-84-04</a>
+								</div>
+
+								<div class="map-office-email">
+									<p class="param">по почте</p>
+									<a href="#" class="val">info@vodolazov.ru</a>
+								</div>
+
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="section interesting-things">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="interesting-things__header">Вас может заинтересовать</h2>
+				</div>
+			</div>
+			<div class="row">
+				
+					<div class="news__item">
+						<div class="news__img-wrap"><img src="img/news1.png" alt="news" class="news__img"></div>
+						<div class="news__desc">
+							<a href="#" class=news__link>
+								<h4 class="news__name">ЦБ повысил ключевую ставку до 7,5% годовых</h4>
+							</a>
+							<span class="news__date">17 сентября 2018</span>
+						</div>
+					</div>
+				
+					<div class="news__item">
+						<div class="news__img-wrap"><img src="img/news1.png" alt="news" class="news__img"></div>
+						<div class="news__desc">
+							<h4 class="news__name">ЦБ повысил ключевую ставку до 7,5% годовых</h4>
+							<span class="news__date">17 сентября 2018</span>
+						</div>
+					</div>
+				
+					<div class="news__item">
+						<div class="news__img-wrap"><img src="img/news1.png" alt="news" class="news__img"></div>
+						<div class="news__desc">
+							<h4 class="news__name">ЦБ повысил ключевую ставку до 7,5% годовых</h4>
+							<span class="news__date">17 сентября 2018</span>
+						</div>
+					</div>
+				
+					<div class="news__item-video">
+						<div class="news__img-wrap">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ClI7WvY4jC0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="news__desc">
+							<h4 class="news__name">ЦБ повысил ключевую ставку до 7,5% годовыхЦБ повысил ключевую ставку до 7,5% годовыхЦБ повысил ключевую ставку до 7,5% годовых</h4>
+							<span class="news__date">17 сентября 2018</span>
+						</div>
+					</div>
+				
+					<div class="news__item">
+						<div class="news__img-wrap"><img src="img/news1.png" alt="news" class="news__img"></div>
+						<div class="news__desc">
+							<h4 class="news__name">ЦБ повысил ключевую ставку до 7,5% годовых</h4>
+							<span class="news__date">17 сентября 2018</span>
+						</div>
+					</div>
+				
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<p class="copyright-text">Весь контент, представленный на сайте, является интеллектуальной собственностью Александра Водолазова. Любое несанкционированное копирование текста преследуется в соответствии с законодательством.</p>
+						<div class="copyright-info">
+							<span class="copyright-owner">Частный риэлтор Водолазов Александр Александрович © 2012-2018</span>
+							<a href="#" class="license">Пользовательское соглашение</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</section>
 	<script src="js/scripts.min.js"></script>
 

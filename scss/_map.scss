@@ -1,0 +1,76 @@
+.map{
+	padding-top: 80px;
+	height: 100vh;
+	width: 100%;
+	position: relative;	
+	.map-yandex{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 80px;
+		bottom: 0;
+		background-color: rgba(255,230,255,.7);
+	}
+	.map-contacts{
+		box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+		border-radius: 10px;
+		background-color: #ffffff;
+		padding: 42px 10px 60px 65px;
+		width: 570px;
+		height: 640px;
+		.map-header{
+			color: #20202b;
+			font: 40px "montserrat-regular", sans-serif;
+			font-weight: 500;
+			line-height: 50px;
+		}
+		.map-office__name,.map-consult-box{
+			font: 18px/25px "montserrat-bold", sans-serif;
+			font-weight: 700;
+			color: #20202b;
+			display: block;
+		}
+		span{
+			font: 16px/25px "opensans-regular", sans-serif;
+		}
+		.map-office__address,.map-office__time{
+			margin-left: 30px;
+			display: block;
+		}
+	}
+	.map-office-box{
+		margin-top: 37px;
+	}
+
+	.map-office-phone,.map-office-email{
+		display: flex;
+		font: 16px/20px "opensans-regular", sans-serif;
+		margin-left: 30px;
+	}
+	.map-office__name{
+		margin-bottom: 25px;
+	}
+	.map-office-email a{
+		text-decoration: underline;
+		color: #ff8666;
+	}
+	.param{
+		width: 100px;
+		margin-right: 20px;
+	}
+	.map-consult-box{
+		margin-top: 80px;
+		margin-right: 20px;
+	}
+}
+
+.map-contact-wrap{
+	height: 100%;
+	.h100{
+		height: 100%;
+	}
+	.ac{
+		display: flex;
+		align-items: center;
+	}
+}

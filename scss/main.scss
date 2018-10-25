@@ -60,6 +60,9 @@ b, strong {
 @import "my-proposition";
 @import "feedback";
 @import "calculator";
+@import "attention";
+@import "map";
+@import "interesting";
 .re-hash,.positive-block,.additional-options__shadows,.positive-flat,.my-proposition,.official-partners,.feedback,.calculator,.attention{
 	padding-top: 80px;
 }
@@ -118,6 +121,36 @@ b, strong {
 }
 
 
+.start-video {
+    position: absolute;
+    top: 80px;
+    padding: 12px;
+    left: 174px;
+    opacity: .3;
+    
+    cursor: pointer;
+    
+    transition: all 0.3s;
+}
 
+.start-video:hover
+{
+    opacity: 1;
+    -webkit-filter: brightness (1);
+}
+
+div.thumbnail_container
+{
+    width: 434px;
+    height: 244px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+img.thumbnail
+{
+    margin-top: -50px;
+    opacity: 0.5;
+}
 
 @import "media"; // Always at the end
