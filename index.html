@@ -31,40 +31,40 @@
 </head>
 
 <body>
-	<section class="section main-page">
+	<section class="section main-page" data-src="../video/fon" data-section-name="header">
 		<div class="main-screen">
 			<!-- main navigation bar -->
 			<div class="main-navbar">
 				<div class="container">
 					<div class="row">
-						<div class="col-3">
+						<div class="col-lg-3 col-sm-6 col-3">
 							<a href="#" class="logo">
 								<img src="img/icons/svg/logo.svg" class="logo-icon" alt="">
 							</a>
 						</div>
-						<div class="col-6">
+						<div class="col-lg-6 tablet-none">
 							<ul class="menu">
 								<li class="menu__item">
-									<a href="#" class="menu__link">Обо мне</a>
+									<a href="#" class="menu__link" data-scrollto="about-me">Обо мне</a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">Продать</a>
+									<a href="#" class="menu__link" data-scrollto="reasons-to-trust">Продать</a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">Купить</a>
+									<a href="#" class="menu__link" data-scrollto="positive-flat">Купить</a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">Отзиви</a>
+									<a href="#" class="menu__link" data-scrollto="feedback">Отзиви</a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">Стоимость</a>
+									<a href="#" class="menu__link" data-scrollto="calculator">Стоимость</a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">Контакти</a>
+									<a href="#" class="menu__link" data-scrollto="map">Контакти</a>
 								</li>
 							</ul>
 						</div>
-						<div class="col-3">
+						<div class="col-lg-3 col-sm-6 col-9">
 							<div class="contacts">
 								<a  href="#" class="contacts__phone">+7 (495) 772 84 04</a>
 
@@ -72,6 +72,11 @@
 									Россия, Москва
 								</span>
 							</div>
+							<button class="hamburger hamburger--collapse" type="button">
+							  <span class="hamburger-box">
+							    <span class="hamburger-inner"></span>
+							  </span>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -80,34 +85,34 @@
 			<div class="main-navbar--fixed">
 				<div class="container">
 					<div class="row">
-						<div class="col-3">
+						<div class="col-lg-3 col-sm-6 col-3">
 							<a href="#" class="logo">
 								<img src="img/icons/svg/logo-gray.svg" class="logo-icon" alt="">
 							</a>
 						</div>
-						<div class="col-6">
+						<div class="col-lg-6 tablet-none">
 							<ul class="menu">
 								<li class="menu__item">
-									<a href="#" class="menu__link">Обо мне</a>
+									<a href="#" class="menu__link" data-scrollto="about-me">Обо мне</a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">Продать</a>
+									<a href="#" class="menu__link" data-scrollto="reasons-to-trust">Продать</a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">Купить</a>
+									<a href="#" class="menu__link" data-scrollto="positive-flat">Купить</a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">Отзиви</a>
+									<a href="#" class="menu__link" data-scrollto="feedback">Отзиви</a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">Стоимость</a>
+									<a href="#" class="menu__link" data-scrollto="calculator">Стоимость</a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">Контакти</a>
+									<a href="#" class="menu__link" data-scrollto="map">Контакти</a>
 								</li>
 							</ul>
 						</div>
-						<div class="col-3">
+						<div class="col-lg-3 col-sm-6 col-9">
 							<div class="contacts">
 								<a  href="#" class="contacts__phone">+7 (495) 772 84 04</a>
 
@@ -115,6 +120,11 @@
 									Россия, Москва
 								</span>
 							</div>
+							<button class="hamburger hamburger--collapse" type="button">
+							  <span class="hamburger-box">
+							    <span class="hamburger-inner"></span>
+							  </span>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -142,12 +152,13 @@
 			</div>
 		</div>
 	</section>
-	<section class="section about-me">
+
+	<section class="section about-me" data-section-name="information about me">
 		<div class="container">
 			<div class="row">
-				<div class="col-5">
+				<div class="col-xl-5 col-lg-8 col-12">
 					<div class="about-me__block">
-						<div class="info disabled">
+						<div class="info">
 							<h3>Самое важное обо мне</h3>
 							<ul class="about-me__list">
 								<li class="about-me__item">
@@ -179,11 +190,12 @@
 			</div>
 		</div>
 	</section>
-	<section class="section reasons-to-trust">
+
+	<section class="section reasons-to-trust" data-section-name="selling">
 		<div class="reasons-to-trust__fon-wrap">
 			<div class="container">
 				<div class="row">
-					<div class="col-8">
+					<div class="col-lg-7 col-xl-8 col-md-12">
 						<div class="reasons-block">
 							<h3 class="reasons-to-trust__header"><span class="gray-text">7 причин</span> доверить мне продажу вашей квартиры или дома</h3>
 							<ul class="reasons-to-trust__list">
@@ -211,7 +223,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-lg-5 col-xl-4 col-md-12">
 						<div class="reasons-to-trust__ad">
 							<div class="reasons-to-trust__BTI">
 								<div class="reasons-to-trust__BTI-wrap">
@@ -242,7 +254,8 @@
 		</div>
 		
 	</section>
-	<section class="section re-hash">
+
+	<section class="section re-hash" data-section-name="my advantages">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -285,6 +298,7 @@
 			</div>
 		</div>
 	</section>
+
 	<section class="section additional-options">
 		<div class="additional-options__shadows">
 			<div class="container">
@@ -346,12 +360,10 @@
 
 				</div>
 			</div>
-		</div>
-		
+		</div>	
 	</section>
 
-
-	<section class="section positive-flat">
+	<section class="section positive-flat hidden">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -363,7 +375,7 @@
 		</div>
 	</section>
 
-	<section class="section most-important-things">
+	<section class="section most-important-things hidden">
 		<div class="most-important-things__wrap">
 			<div class="container">
 				<div class="row">
@@ -423,7 +435,7 @@
 		</div>
 	</section>
 
-	<section class="section my-proposition">
+	<section class="section my-proposition hidden">
 		<div class="my-proposition__offers">
 			<div class="my-proposition__offers-wrap">
 				<div class="container">
@@ -471,7 +483,7 @@
 		</div>
 	</section>
 	
-	<section class="section feedback">
+	<section class="section feedback hidden">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -574,7 +586,7 @@
 		</div>
 	</section>
 
-	<section class="section calculator">
+	<section class="section calculator hidden">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -792,7 +804,7 @@
 		</div>
 	</section>
 
-	<section class="section attention">
+	<section class="section attention hidden">
 		<div class="container">
 			<div class="row">
 				<div class="col-6 offset-xl-6">
@@ -823,7 +835,7 @@
 		</div>
 	</section>
 
-	<section class="section map">
+	<section class="section map hidden">
 		<div class="map-yandex">
 			<div id="map" style="width: 100%; height: 100%"></div>
 		</div>
@@ -865,7 +877,7 @@
 
 	</section>
 
-	<section class="section interesting-things">
+	<section class="section interesting-things hidden">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">

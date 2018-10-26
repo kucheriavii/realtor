@@ -129,3 +129,36 @@
 		margin-bottom: 22px;
 	}
 }
+
+.reasons-to-trust__BTI{
+	opacity: 0;
+	animation-delay: 0.3s;
+}
+.reasons-to-trust__quick-shell{
+	opacity: 0;
+	animation-delay: 0.6s;
+}
+.reasons-to-trust__item{
+	opacity: 0;
+}
+.reasons-to-trust__item:nth-child(1){
+	animation-delay: 0.2s;
+}
+.reasons-to-trust__item:nth-child(2){
+	animation-delay: 0.4s;
+}
+.reasons-to-trust__item:nth-child(3){
+	animation-delay: 0.6s;
+}
+.reasons-to-trust__item:nth-child(4){
+	animation-delay: 0.8s;
+}
+.reasons-to-trust__item:nth-child(5){
+	animation-delay: 1s;
+}
+.reasons-to-trust__item:nth-child(6){
+	animation-delay: 1.2s;
+}
+.reasons-to-trust__item:nth-child(7){
+	animation-delay: 1.4s;
+}

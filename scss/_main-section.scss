@@ -27,6 +27,11 @@
 		color: $accentColor;
 		font: 14px/25px "montserrat-regular", sans-serif;
 		font-weight: 500;
+		&.active{
+			text-decoration: underline !important;
+			color: #7e89a1;
+			padding-bottom: 2px;
+		}
 		&:active, &:focus{
 			text-decoration: none;
 			outline: 0;
