@@ -125,7 +125,32 @@ b, strong {
 	opacity: 0;
 }
 
+.popap__wrapper{
+	position: fixed;
+    width: 90%;
+    min-height: 90%;
+    left: 5%;
+    top: 5%;
+    z-index: 999;
+    background-color: rgba(255,255,255,1);
+    overflow: auto;
+    display: none;
+	.popup{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index: 9999;
+	}
+}
 
+/******calculator**********/
 
+#domclick__calculator{
+ margin-top: 29px;
+ }
+#domclick__result{
+ transition: margin 150ms;
+ }
 
 @import "media"; // Always at the end

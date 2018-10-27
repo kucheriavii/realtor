@@ -1,7 +1,14 @@
 .my-proposition{
+	input[name='bank']{
+		display: none;
+	}
+	input[name='bank']:checked+img{
+		//border: 1px solid;
+		//padding: 3px;
+	}
 	.my-proposition__offers{
 		background-image: url("../img/build.png");
-		background-size: 100% auto;
+		background-size: cover;
 		height: 500px;
 		background-repeat: no-repeat;
 		&-wrap{

@@ -54,7 +54,7 @@
 									<a href="#" class="menu__link" data-scrollto="positive-flat">Купить</a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link" data-scrollto="feedback">Отзиви</a>
+									<a href="#" class="menu__link" data-scrollto="feedback">Отзывы</a>
 								</li>
 								<li class="menu__item">
 									<a href="#" class="menu__link" data-scrollto="calculator">Стоимость</a>
@@ -102,7 +102,7 @@
 									<a href="#" class="menu__link" data-scrollto="positive-flat">Купить</a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link" data-scrollto="feedback">Отзиви</a>
+									<a href="#" class="menu__link" data-scrollto="feedback">Отзывы</a>
 								</li>
 								<li class="menu__item">
 									<a href="#" class="menu__link" data-scrollto="calculator">Стоимость</a>
@@ -299,7 +299,7 @@
 		</div>
 	</section>
 
-	<section class="section additional-options">
+	<section class="section additional-options" data-section-name="my advantages">
 		<div class="additional-options__shadows">
 			<div class="container">
 				<div class="row">
@@ -363,7 +363,7 @@
 		</div>	
 	</section>
 
-	<section class="section positive-flat hidden">
+	<section class="section positive-flat" data-section-name="buying">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -375,7 +375,7 @@
 		</div>
 	</section>
 
-	<section class="section most-important-things hidden">
+	<section class="section most-important-things" data-section-name="most important things">
 		<div class="most-important-things__wrap">
 			<div class="container">
 				<div class="row">
@@ -384,7 +384,7 @@
 					</div>
 				</div>
 				<div class="row  justify-content-between">
-					<div class="col-4">
+					<div class="col-xl-4 col-12">
 						<div class="most-important-things__item left-item">
 							<div class="most-important-things__item-img-wrap">
 								<img src="img/icons/svg/most-icon-1.svg" alt="hand with watch" class="most-important-things__item-img" >
@@ -399,7 +399,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-xl-4 col-12">
 						<div class="most-important-things__item center-item">
 							<div class="most-important-things__item-img-wrap">
 								<div class="achiv">Экономите<br> до 10%<br> от стоимости</div>
@@ -414,7 +414,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-xl-4 col-12">
 						<div class="most-important-things__item right-item">
 							<div class="most-important-things__item-img-wrap">
 								<img src="img/icons/svg/most-icon-3.svg"  class="most-important-things__item-img" alt="heard">
@@ -435,7 +435,7 @@
 		</div>
 	</section>
 
-	<section class="section my-proposition hidden">
+	<section class="section my-proposition" data-section-name="proposition">
 		<div class="my-proposition__offers">
 			<div class="my-proposition__offers-wrap">
 				<div class="container">
@@ -459,31 +459,48 @@
 				<div class="row">
 					<div class="col-12">
 						<h2 class="my-proposition__banks-header">Официальный партнер всех ведущих банков</h2>
-						<ul class="my-proposition__banks-list">
-							<li class="my-proposition__bank">
-								<img src="img/raiffeisen_bank.png" alt="raiffeisen bank">
-							</li>
-							<li class="my-proposition__bank">
-								<img src="img/deltacredit.png" alt="raiffeisen bank">
-							</li>
-							<li class="my-proposition__bank">
-								<img src="img/sberbank.png" alt="raiffeisen bank">
-							</li>
-							<li class="my-proposition__bank">
-								<img src="img/VTB.png" alt="raiffeisen bank">
-							</li>
-							<li class="my-proposition__bank">
-								<img src="img/rosevrobank.png" alt="raiffeisen bank">
-							</li>
-						</ul>
-						<a href="#" class="button">Рассчитать ипотечный кредит</a>
+						<form action="#" method="POST">
+							<ul class="my-proposition__banks-list">
+								<li class="my-proposition__bank">
+									<label>
+									<input type="radio" name="bank">
+									<img src="img/raiffeisen_bank.png" alt="raiffeisen bank">
+									</label>
+								</li>
+								<li class="my-proposition__bank">
+									<label>
+									<input type="radio" name="bank">
+									<img src="img/deltacredit.png" alt="raiffeisen bank">
+									</label>
+								</li>
+								<li class="my-proposition__bank">
+									<label>
+									<input type="radio" name="bank">
+									<img src="img/sberbank.png" alt="raiffeisen bank">
+									</label>
+								</li>
+								<li class="my-proposition__bank">
+									<label>
+									<input type="radio" name="bank">
+									<img src="img/VTB.png" alt="raiffeisen bank">
+									</label>
+								</li>
+								<li class="my-proposition__bank">
+									<label>
+									<input type="radio" name="bank">
+									<img src="img/rosevrobank.png" alt="raiffeisen bank">
+									</label>
+								</li>
+							</ul>
+						</form>
+						<a href="#" class="button on-popup off-scroll-page ipoteka">Рассчитать ипотечный кредит</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	
-	<section class="section feedback hidden">
+	<section class="section feedback" data-section-name="feedbacks">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -947,7 +964,15 @@
 			</div>
 		</footer>
 	</section>
-	<script src="js/scripts.min.js"></script>
+	<script type="text/javascript" src="https://cdn.domclick.ru/widget/mortgage/inject.js"></script>
 
+	<script type="text/javascript" src="https://cdn.domclick.ru/widget/mortgage/inject.js"></script>
+	<script src="js/scripts.min.js"></script>
+	<div class="popap__wrapper">
+		<div class="popup">
+			<div class="close">X</div>
+			<div id="calculator"></div>
+		</div>
+	</div>
 </body>
 </html>

@@ -108,3 +108,25 @@
 		font: 12px "montserrat-regular", sans-serif;
 	}
 }
+
+.additional-options__content-header, .additional-options__content-item,.additional-options__content-history,.additional-options__img-bg{
+	opacity: 0;
+}
+.additional-options__content-item:nth-child(1){
+	animation-delay: 0.1s;
+}
+.additional-options__content-item:nth-child(2){
+	animation-delay: 0.3s;
+}
+.additional-options__content-item:nth-child(3){
+	animation-delay: 0.6s;
+}
+.additional-options__content-item:nth-child(4){
+	animation-delay: 0.9s;
+}
+.additional-options__content-history{
+	animation-delay: 0.4s;
+}
+.additional-options__img-bg{
+	animation-delay: 0.6s;
+}
