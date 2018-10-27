@@ -5,9 +5,13 @@
 	background-repeat: no-repeat;
 	padding-top: 60px;
 	background-position: 0 60px;
+	background-size: 47%;
 	min-height: 760px;
 	margin-bottom: 60px;
 	max-height: 600px;
+	.img-for-mobile__stop{
+		display: none;
+	}
 	.attention__header{
 		width: 446px;
 		height: 29px;

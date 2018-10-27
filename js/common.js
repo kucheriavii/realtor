@@ -18,14 +18,16 @@ $(function() {
 		});
 	}
 
-	if(!isMobile(768)){
+	if(!isMobile(1024)){
 		screenScrollier(); //fullScreen scrolling navigator
 	}
 	fixedMenu(); //fixed menu
+	fixedPriceInCalculator() //make displayfix in calculator
 
 
 
-
+		
+	
 
 	$('.menu__item').eq(1).click(function(e){
 		e.preventDefault();
@@ -58,7 +60,25 @@ $(function() {
 	$('.feedback__item-list').slick({
 		 infinite: true,
 		  slidesToShow: 3,
-		  slidesToScroll: 1
+		  slidesToScroll: 1,
+		   responsive: [
+		    {
+		      breakpoint: 1200,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1,
+		        infinite: true,
+		        dots: true
+		      }
+		    },{
+		      breakpoint: 768,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+		        infinite: true,
+		        dots: true
+		      }
+		    }]
 	});
 
 
@@ -84,6 +104,32 @@ $(function() {
 
    
 });
+function fixedPriceInCalculator(){
+	var start = $('.calculator__parameters-base-rate').offset().top;
+	var finish = $('.attention').offset().top-200;
+	$(document).on('scroll', function(e){
+		var distance = $('.calculator__parameters-base-rate').offset().top;
+		var position = $(document).scrollTop();
+		var bottomStop = $('.attention').offset().top+$(window).height()+$('.attention').height()
+
+		if(position>start){
+			$('.calculator__parameters-base-rate').addClass('fix');
+			console.log(start)
+			console.log(finish)
+			console.log(distance)
+		} 
+
+		if(position<start){
+			$('.calculator__parameters-base-rate').removeClass('fix')
+		}
+		if(position>finish){
+			$('.calculator__parameters-base-rate').removeClass('fix')
+		}
+		
+	})
+}
+
+
 
 function tips(){
 	$('.most-important-things__item-img-wrap').click(function(e){

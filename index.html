@@ -26,7 +26,7 @@
 	<link rel="stylesheet" href="libs/slick/slick.css">
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 	<link rel="stylesheet" href="css/main.min.css">
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=f7fbfbc5-9d53-4d24-bb89-09613591cb3c&lang=en_US" type="text/javascript"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=f7fbfbc5-9d53-4d24-bb89-09613591cb3c&lang=en_US"></script>
 
 </head>
 
@@ -603,7 +603,7 @@
 		</div>
 	</section>
 
-	<section class="section calculator hidden">
+	<section class="section calculator" data-section-name="calculator">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -687,7 +687,7 @@
 						</div>
 
 						<div class="row">
-							<div class="col-6">
+							<div class="col-xl-6 col-12">
 								<div class="calculator__parameters-long">
 
 
@@ -738,7 +738,7 @@
 								</div>
 							</div>
 
-							<div class="col-6">
+							<div class="col-xl-6 col-12">
 								<div class="calculator__parameters-long right-clc">
 
 
@@ -821,10 +821,11 @@
 		</div>
 	</section>
 
-	<section class="section attention hidden">
+	<section class="section attention" data-section-name="not interesting">
 		<div class="container">
 			<div class="row">
-				<div class="col-6 offset-xl-6">
+				<div class="col-12 col-lg-6 offset-lg-6">
+					<img src="img/stop.png" alt="stop" class="img-for-mobile__stop">
 					<h2 class="attention__header">Уважаемые клиенты!</h2>
 					<span class="attention__desc">
 						Ниже представлена информация, которая, возможно, поможет всем нам сэкономить время.
@@ -852,12 +853,12 @@
 		</div>
 	</section>
 
-	<section class="section map hidden">
+	<section class="section map">
 		<div class="map-yandex">
 			<div id="map" style="width: 100%; height: 100%"></div>
 		</div>
 
-		<div class="map-contact-wrap">
+		<div class="map-contact-wrap" data-section-name="contacts">
 			<div class="container h100">
 				<div class="row h100">
 					<div class="col-xl-6 h100 ac">
@@ -931,7 +932,7 @@
 				
 					<div class="news__item-video">
 						<div class="news__img-wrap">
-							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ClI7WvY4jC0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<iframe width="100" height="100" src="https://www.youtube.com/embed/ClI7WvY4jC0"  allow="autoplay; encrypted-media" allowfullscreen></iframe>
 						</div>
 						<div class="news__desc">
 							<h4 class="news__name">ЦБ повысил ключевую ставку до 7,5% годовыхЦБ повысил ключевую ставку до 7,5% годовыхЦБ повысил ключевую ставку до 7,5% годовых</h4>
@@ -964,9 +965,8 @@
 			</div>
 		</footer>
 	</section>
-	<script type="text/javascript" src="https://cdn.domclick.ru/widget/mortgage/inject.js"></script>
 
-	<script type="text/javascript" src="https://cdn.domclick.ru/widget/mortgage/inject.js"></script>
+	<script src="https://cdn.domclick.ru/widget/mortgage/inject.js"></script>
 	<script src="js/scripts.min.js"></script>
 	<div class="popap__wrapper">
 		<div class="popup">

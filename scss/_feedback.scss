@@ -1,5 +1,11 @@
 .feedback{
 	background-color: #7e89a1;
+	.slick-next{
+		right: 0;
+	}
+	.slick-prev{
+		left: 0;
+	}
 	&__header{
 		font: 40px/50px "montserrat-regular", sans-serif;
 		color: $accentColor;
