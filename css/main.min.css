@@ -10309,6 +10309,13 @@ strong {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  font-family: "opensans-regular", sans-serif;
+}
+
+.popup-thk span {
+  text-align: right;
+  display: block;
+  width: 100%;
 }
 
 .popup-thk .tnk-block {
@@ -10439,7 +10446,7 @@ strong {
   background-color: white;
   overflow: auto;
   padding-bottom: 20px;
-  display: block;
+  display: none;
 }
 
 .popap__wrapper .close {
@@ -10450,6 +10457,7 @@ strong {
 }
 
 .popap__wrapper .popup {
+  display: none;
   position: absolute;
   top: 25px;
   z-index: 99;

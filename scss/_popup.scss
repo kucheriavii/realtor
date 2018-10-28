@@ -526,6 +526,12 @@
 	    height: auto;
 	    align-items: flex-end;
 	    display: flex;
+	    font-family: "opensans-regular", sans-serif;
+	    span{
+			text-align: right;
+			display: block;
+			width: 100%;
+	    }
 	.tnk-block{
 		display: flex;
 		box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
