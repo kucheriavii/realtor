@@ -233,7 +233,7 @@
 		border: none;
 	}
 }
-.popup-free-sell{
+.popup-free-sell, .popup-ask{
 	.forYesAns, .forNoAns{
 		display: none;
 		&.active{
@@ -413,7 +413,7 @@
 			background-repeat: no-repeat;
 			background-position: 97% 50%;
 			font: 14px/40px "opensans-regular";	
-			&:hover{
+			&:hover,&:active,&:focus{
 				background-color: #f0f3fa;
 			}
 			&.active{
@@ -510,3 +510,8 @@
 	}
 }
 
+.popup-ask{
+	.popup__inputs-wrap .textareawrap textarea{
+		height: 100%;
+	}
+}

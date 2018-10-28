@@ -352,7 +352,7 @@
 
 									<p>Для меня не проблема сделать разъезд из одной квартиры на четыре. Опека, приватизация, продажа ипотечных квартир и многое другое. В каждом случае я помогу найти оптимальное решение. Вы можете бесплатно получить консультацию по всем вопросам.</p>
 
-									<a href="#" class="button">Получить консультацию</a>
+									<a href="#" class="button on-popup off-scroll-page" data-popup="ask">Получить консультацию</a>
 								</div>
 							</div>
 						</div>
@@ -992,7 +992,7 @@
 		<div class="popup popup-calculator hidden">
 			<div id="calculator"></div>
 		</div>
-		<div class="popup popup-free-sell">
+		<div class="popup popup-free-sell hidden">
 			<form action="#" method="POST">
 
 				<div class="container">
@@ -1233,6 +1233,89 @@
 											
 										</div>
 										<button class="button">Получить отчет</button>
+										<div class="info">
+											<p class="info-text">Нажимая на кнопку «Получить ответ» вы соглашаетесь с <a href="info-link">политикой конфиденциальности</a></p>
+										</div>
+									</div>
+										
+								</div>
+							</div>
+
+
+						</div>
+					</form>
+				</div>
+
+			</form>
+			<div class="close-window-wrap">
+				<div class="close-window">
+					<span class="close-window-text">Закрыть окно?</span>
+					<div class="button-wrap">
+						<button class="button button-yes">Да</button>
+						<button class="button button-no">Нет</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup popup-ask">
+			<form action="#" method="POST">
+
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="popup__name">
+								Задать вопрос Александру Водолазову
+							</h2>
+						</div>
+					</div>
+					<form action="#" method="POST">
+						<div class="row">
+
+							<div class="col-12">
+								<div class="popup__inputs-wrap">
+									
+									<div class="col-12">
+										
+										<div class="popup__inputs-wrap forYesAns">
+											<div class="input-wrap">
+												<input type="text" class="popup__ad-link" placeholder="Скопируйте ссылку на ваше объявление" name="user-name">
+												<span class="input-error">palamalos vse</span>
+											</div>
+											<div class="input-wrap">
+												<input type="text" class="popup__user-how-long input-choose" placeholder="Сколько месяцев длиться продажа" name="user-phone" readonly>
+												<span class="input-error">palamalos vse</span>
+												<ul class="input-variants">
+													<li>9</li>
+													<li>10</li>
+													<li>11</li>
+													<li>12</li>
+													<li>более 12</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="popup__inputs-wrap forNoAns active">
+											<div class="input-wrap">
+												<input type="text" class="popup__price-link" placeholder="Ваше имя *" name="user-name">
+												<span class="input-error">palamalos vse</span>
+											</div>
+											<div class="input-wrap">
+												<input type="text" class="popup__price-link" placeholder="Номер телефона *" name="user-phone">
+												<span class="input-error">palamalos vse</span>
+											</div>
+											<div class="input-wrap">
+												<input type="text" class="popup__price-link" placeholder="E-mail" name="user-email">
+												<span class="input-error">palamalos vse</span>
+											</div>
+											<div class="input-wrap">
+												<div class="textareawrap">
+													<textarea name="user-question" id="user-quest" cols="30" rows="10">Опишите, пожалуйста, максимально подробно, о чем вы хотели бы проконсультироваться со мной *</textarea>
+												</div>
+												<span class="input-error">palamalos vse</span>
+											</div>
+										</div>
+										<button class="button">Отправить запрос</button>
 										<div class="info">
 											<p class="info-text">Нажимая на кнопку «Получить ответ» вы соглашаетесь с <a href="info-link">политикой конфиденциальности</a></p>
 										</div>
