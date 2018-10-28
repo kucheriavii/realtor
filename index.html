@@ -895,7 +895,7 @@
 
 	</section>
 
-	<section class="section interesting-things hidden">
+	<section class="section interesting-things">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -905,10 +905,24 @@
 			<div class="row">
 				
 					<div class="news__item">
+						<a href="#" class="news__ink-wrap">
+
+							<div class="news__img-wrap"><img src="img/news1.png" alt="news" class="news__img"></div>
+							<div class="news__desc">
+								<span>
+									<h4 class="news__name">Здесь ссьілка целая карточка</h4>
+								</span>
+								<span class="news__date">17 сентября 2018</span>
+							</div>
+
+						</a>
+					</div>
+				
+					<div class="news__item">
 						<div class="news__img-wrap"><img src="img/news1.png" alt="news" class="news__img"></div>
 						<div class="news__desc">
 							<a href="#" class=news__link>
-								<h4 class="news__name">ЦБ повысил ключевую ставку до 7,5% годовых</h4>
+								<h4 class="news__name">Здесь ссьілка только название</h4>
 							</a>
 							<span class="news__date">17 сентября 2018</span>
 						</div>
@@ -929,21 +943,24 @@
 							<span class="news__date">17 сентября 2018</span>
 						</div>
 					</div>
-				
+
 					<div class="news__item-video">
 						<div class="news__img-wrap">
-							<iframe width="100" height="100" src="https://www.youtube.com/embed/ClI7WvY4jC0"  allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							
+							<video  class="video" width="320" height="240" controls>
+							  <source src="video/videoplayback.mp4" type="video/mp4">
+							  <source src="movie.ogg" type="video/ogg">
+							Your browser does not support the video tag.
+							</video>
+							<div class="playpause"></div>
+
 						</div>
+						
+
+
+
 						<div class="news__desc">
 							<h4 class="news__name">ЦБ повысил ключевую ставку до 7,5% годовыхЦБ повысил ключевую ставку до 7,5% годовыхЦБ повысил ключевую ставку до 7,5% годовых</h4>
-							<span class="news__date">17 сентября 2018</span>
-						</div>
-					</div>
-				
-					<div class="news__item">
-						<div class="news__img-wrap"><img src="img/news1.png" alt="news" class="news__img"></div>
-						<div class="news__desc">
-							<h4 class="news__name">ЦБ повысил ключевую ставку до 7,5% годовых</h4>
 							<span class="news__date">17 сентября 2018</span>
 						</div>
 					</div>
@@ -974,5 +991,33 @@
 			<div id="calculator"></div>
 		</div>
 	</div>
+
+	<script>
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // Replace the 'ytplayer' element with an <iframe> and
+    // YouTube player after the API code downloads.
+    var player;
+
+    function onYouTubePlayerAPIReady() {
+        player = new YT.Player('ytplayer', {
+            height: '100%',
+            width: '100%',
+            videoId: 'LIPc1cfS-oQ',
+            playerVars: {
+                'autoplay': 0,
+                'rel': 0,
+                'showinfo': 1,
+            }
+        });
+    }
+   
+
+    console.log('test');
+</script>
+
 </body>
 </html>

@@ -23,7 +23,7 @@ $(function() {
 	}
 	fixedMenu(); //fixed menu
 	fixedPriceInCalculator() //make displayfix in calculator
-
+	resonToTrastCount();
 
 
 		
@@ -35,26 +35,26 @@ $(function() {
 	});
 
 	/*************************************************************************/
-	function anim(when,what){
-		$(document).on('scroll', function(e){
-			if($(document).scrollTop()>=$(when).offset().top-10){
-				$(what).addClass('fadeInLeft animated');
-			}
-		})
-		$(window).on('load', function(e){
-			if($(document).scrollTop()>=$(when).offset().top-10){
-				$(what).addClass('fadeInLeft animated');
-			}
-		})
-	}
+	
+$('.video').parent().click(function () {
+  if($(this).children(".video").get(0).paused){        $(this).children(".video").get(0).play();   $(this).children(".playpause").fadeOut();
+    }else{       $(this).children(".video").get(0).pause();
+  $(this).children(".playpause").fadeIn();
+    }
+});
+
+
+
 	
 	/*************************************************************************/
-	var count = 0;
-	$('.reasons-to-trust__item p:first-child').each(function(){
-		count++;
-		$(this).before('<span class="reasons-to-trust__item-count">'+count+'.</span>')
-	})
+	
+    $(document).on('click', '.play_button', function(){
+        player.playVideo();
+        setTimeout(function(){
+            $('.play_button').remove();
+		},1000);
 
+	})
 	/************************************************************************/
 
 	$('.feedback__item-list').slick({
@@ -374,4 +374,25 @@ function sberbank(){
 		 { cssSuffix: 'universal' }
 		 );
 	});
+}
+
+function anim(when,what){
+	$(document).on('scroll', function(e){
+		if($(document).scrollTop()>=$(when).offset().top-10){
+			$(what).addClass('fadeInLeft animated');
+		}
+	})
+	$(window).on('load', function(e){
+		if($(document).scrollTop()>=$(when).offset().top-10){
+			$(what).addClass('fadeInLeft animated');
+		}
+	})
+}
+
+function resonToTrastCount(){
+	var count = 0;
+	$('.reasons-to-trust__item p:first-child').each(function(){
+		count++;
+		$(this).before('<span class="reasons-to-trust__item-count">'+count+'.</span>')
+	})
 }
