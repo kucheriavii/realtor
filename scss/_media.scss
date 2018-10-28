@@ -117,7 +117,13 @@
 	.news__item{
 		width: 40%;
 	}
-
+	.popup-thk{
+		align-items: center;
+		.tnk-block{
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
 	/*antianimation*/
 	.about-me__block .info .about-me__list .about-me__item{
 		opacity: 1;
@@ -653,6 +659,32 @@
 	#domclick__result{
 		min-width: 100%;
 	}
+	.popup-thk img {
+	    display: block;
+	    height: 100%;
+	    height: 500px;
+	    bottom: 0;
+	    float: left;
+	    position: absolute;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    z-index: 1;
+	    width: auto;
+	}
+	.popup-thk .tnk-block  .thk-text{
+		z-index: 99;
+	    background: #7e89a1;
+	    width: 100%;
+	    padding: 5px;
+	    color: #fff;
+	    display: flex;
+	    flex-wrap: wrap;
+	    align-items: center;
+	    justify-content: center;
+	    /* background: #f00; */
+	    border-radius: 10px;
+	    padding: 15px;
+	}
 }
 
 // ≥480px
@@ -861,6 +893,9 @@
 	}
 	.popup-free-sell .popup__inputs-wrap input.popup__ad-link::placeholder{
 		font-size: 11px !important;
+	}
+	.popup-thk .tnk-block{
+		height: 400px;
 	}
 }
 
