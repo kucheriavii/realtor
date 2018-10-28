@@ -64,6 +64,7 @@ b, strong {
 @import "attention";
 @import "map";
 @import "interesting";
+@import "popup";
 .hidden{
 	display: none;
 }
@@ -134,13 +135,22 @@ b, strong {
     z-index: 999;
     background-color: rgba(255,255,255,1);
     overflow: auto;
-    display: none;
-	.popup{
+    padding-bottom: 20px;
+    display: block;
+    .close{
 		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		z-index: 9999;
+		right: 20px;
+		top: 7px;
+		z-index: 999;
+    }
+	.popup{
+	    position: absolute;
+	    top: 25px;
+	    z-index: 99;
+	    left: 20px;
+	    right: 20px;
+	    top: 40px;
+    /* margin: 0 auto; */
 	}
 }
 

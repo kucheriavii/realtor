@@ -244,7 +244,7 @@
 							<div class="reasons-to-trust__quick-shell">
 								<h4 class="quick-shell-header">Уже давно продаете свою квартиру или дом?</h4>
 								<span class="quick-shell-text">Узнайте сейчас как быстрее найти покупателя</span>
-								<a href="#" class="button">Бесплатно получить отчет</a>
+								<a href="#" class="button on-popup off-scroll-page" data-popup="free-sell">Бесплатно получить отчет</a>
 							</div>
 						</div>
 					</div>
@@ -493,7 +493,7 @@
 								</li>
 							</ul>
 						</form>
-						<a href="#" class="button on-popup off-scroll-page ipoteka">Рассчитать ипотечный кредит</a>
+						<a href="#" class="button on-popup off-scroll-page ipoteka" data-popup="calculator">Рассчитать ипотечный кредит</a>
 					</div>
 				</div>
 			</div>
@@ -986,38 +986,279 @@
 	<script src="https://cdn.domclick.ru/widget/mortgage/inject.js"></script>
 	<script src="js/scripts.min.js"></script>
 	<div class="popap__wrapper">
-		<div class="popup">
-			<div class="close">X</div>
+		<div class="close">
+			<img src="img/icons/png/close.png" alt="close popup">
+		</div>
+		<div class="popup popup-calculator hidden">
 			<div id="calculator"></div>
+		</div>
+		<div class="popup popup-free-sell">
+			<form action="#" method="POST">
+
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="popup__name">
+								Получите бесплатно отчет о продаже
+							</h2>
+						</div>
+					</div>
+					<form action="#" method="POST">
+						<div class="row">
+							<div class="col-12">
+								<div class="popup__user-data">
+									<span class="popup__user-data-text">Пожалуйста, <br>введите свои данные</span>
+								</div>
+								<div class="popup__inputs-wrap">
+									<div class="input-wrap">
+										<input type="text" class="popup__user-name" placeholder="Ваше имя *" name="user-name">
+										<span class="input-error">palamalos vse</span>
+									</div>
+									<div class="input-wrap">
+										<input type="text" class="popup__user-phone" placeholder="Номер телефона *" name="user-phone">
+										<span class="input-error">palamalos vse</span>
+									</div>
+									<div class="input-wrap">
+										<input type="text" class="popup__user-mail" placeholder="E-mail" name="user-mail">
+										<span class="input-error">palamalos vse</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-12">
+								<div class="popup__user-data">
+									<span class="popup__user-data-text">Ваша квартира или дом сейчас где-то <br>рекламируются?</span>
+								</div>
+								<div class="popup__inputs-wrap">
+									
+									<div class="col-12">
+										<div class="popup__parameters">
+											<div class="popup__option">
+												<div class="popup__option-panel">
+													<div class="popup__option-variant">
+														<input type="radio" name="flat-ad" id="ad-yes">
+														<label for="ad-yes">Да</label>
+													</div>
+													<div class="popup__option-variant">
+														<input type="radio" name="flat-ad" id="ad-no" checked>
+														<label for="ad-no">Нет</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="popup__inputs-wrap forYesAns">
+											<div class="input-wrap">
+												<input type="text" class="popup__ad-link" placeholder="Скопируйте ссылку на ваше объявление" name="user-name">
+												<span class="input-error">palamalos vse</span>
+											</div>
+											<div class="input-wrap">
+												<input type="text" class="popup__user-how-long input-choose" placeholder="Сколько месяцев длиться продажа" name="user-phone" readonly>
+												<span class="input-error">palamalos vse</span>
+												<ul class="input-variants">
+													<li>9</li>
+													<li>10</li>
+													<li>11</li>
+													<li>12</li>
+													<li>более 12</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="popup__inputs-wrap forNoAns active">
+											<div class="input-wrap">
+												<div class="textareawrap">
+													<textarea name="flat-description" id="flet-desc" cols="30" rows="10"></textarea>
+													<span class="textarea-sym-left">Начните ввод</span>
+												</div>
+												<span class="input-error">palamalos vse</span>
+											</div>
+
+											<div class="input-wrap">
+												<input type="text" class="popup__price-link" placeholder="Актуальная цена, руб." name="flat-price">
+												<span class="input-error">palamalos vse</span>
+											</div>
+											<div class="input-wrap chose-pic">
+												<ul class="pic-list">
+													<li class="pic-list-item">
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+													</li>
+													<li class="pic-list-item">
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+													</li>
+													<li class="pic-list-item">
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+													</li>
+													<li class="pic-list-item">
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+													</li>
+													<li class="pic-list-item">
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+													</li>
+													<li class="pic-list-item">
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+													</li>
+													<li class="pic-list-item">
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+													</li>
+													<li class="pic-list-item">
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+													</li>
+													<li class="pic-list-item">
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+													</li>
+													<li class="pic-list-item">
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+													</li>
+													<li class="pic-list-item">
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+													</li>
+													<li class="pic-list-item">
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+													</li>
+													<li class="pic-list-item">
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+														<div class="pic-list-wrap">
+															<img src="img/news1.png" alt="flat photo">
+															<div class="pic-list-del"></div>
+														</div>
+													</li>
+													<li class="pic-list-item">
+														<a href="#" class="add-photo-btn">Добавить фото</a>
+													</li>
+
+												</ul>
+												
+											</div>
+											<div class="input-wrap">
+												<input type="text" class="popup__user-how-long input-choose" placeholder="Сколько месяцев длиться продажа" name="user-phone" readonly>
+												<span class="input-error">palamalos vse</span>
+												<ul class="input-variants">
+													<li>та й таке</li>
+													<li>7</li>
+													<li>8</li>
+													<li>9</li>
+													<li>10</li>
+													<li>11</li>
+													<li>12</li>
+													<li>более 12</li>
+												</ul>
+											</div>
+											
+										</div>
+										<button class="button">Получить отчет</button>
+										<div class="info">
+											<p class="info-text">Нажимая на кнопку «Получить ответ» вы соглашаетесь с <a href="info-link">политикой конфиденциальности</a></p>
+										</div>
+									</div>
+										
+								</div>
+							</div>
+
+
+						</div>
+					</form>
+				</div>
+
+			</form>
+			<div class="close-window-wrap">
+				<div class="close-window">
+					<span class="close-window-text">Закрыть окно?</span>
+					<div class="button-wrap">
+						<button class="button button-yes">Да</button>
+						<button class="button button-no">Нет</button>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
-	<script>
-    var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/player_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    // Replace the 'ytplayer' element with an <iframe> and
-    // YouTube player after the API code downloads.
-    var player;
-
-    function onYouTubePlayerAPIReady() {
-        player = new YT.Player('ytplayer', {
-            height: '100%',
-            width: '100%',
-            videoId: 'LIPc1cfS-oQ',
-            playerVars: {
-                'autoplay': 0,
-                'rel': 0,
-                'showinfo': 1,
-            }
-        });
-    }
-   
-
-    console.log('test');
-</script>
 
 </body>
 </html>
