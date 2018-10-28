@@ -10582,6 +10582,13 @@ strong {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
+  .interesting-things__header {
+    font-size: 32px;
+    padding-top: 0;
+  }
+  .interesting-things {
+    padding-top: 0;
+  }
 }
 
 /*==========  Mobile First  ==========*/
