@@ -1,4 +1,29 @@
 $(function() {
+	//scripts for article page
+	if($('body').hasClass('articlePage')){
+
+		$('.video').parent().click(function () {
+		  if($(this).children(".video").get(0).paused){        
+			  	$(this).children(".video").get(0).play();   
+			  	$(this).children(".playpause").fadeOut();
+		    }else{       
+				$(this).children(".video").get(0).pause();
+				$(this).children(".playpause").fadeIn();
+		    }
+		});
+		ulCount();
+		function ulCount(){
+			var count = 0;
+			$('.article__count-list li p').each(function(){
+				count++;
+				console.log($(this))
+				$(this).before('<span class="article_span-count">'+count+'.</span>')
+			})
+		}
+		return 0;
+	}
+	//end of article scripts
+
 	mainscreenVideoBackground(); //main-page video background
 	
 	if(isMobile(768)){
@@ -37,11 +62,18 @@ $(function() {
 	/*************************************************************************/
 	
 $('.video').parent().click(function () {
-  if($(this).children(".video").get(0).paused){        $(this).children(".video").get(0).play();   $(this).children(".playpause").fadeOut();
-    }else{       $(this).children(".video").get(0).pause();
-  $(this).children(".playpause").fadeIn();
+  if($(this).children(".video").get(0).paused){        
+	  	$(this).children(".video").get(0).play();   
+	  	$(this).children(".playpause").fadeOut();
+    }else{       
+		$(this).children(".video").get(0).pause();
+		$(this).children(".playpause").fadeIn();
     }
 });
+
+$('.playarticle').click(function(){
+$('.article__video')[0].play();
+})
 
 
 
@@ -176,7 +208,7 @@ function tips(){
 }
 
 function fixedMenu(){
-	if(!isMobile(768)){
+	if(!isMobile(768) && !$('.main-navbar--fixed').hasClass('noscript')){ //класс noscript в фиксированом меню 
 		$(window).on('load scroll', function(e){
 			if($(window).scrollTop()>=$('.main-page__description-wrap').height()-1){
 				$('.main-navbar').fadeOut();
