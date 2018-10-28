@@ -10420,7 +10420,7 @@ strong {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .article .article__quoter .article__quoter-header .article__quoter-img-wrap {
@@ -10438,13 +10438,14 @@ strong {
   display: block;
 }
 
-.article .article__quoter .article__quoter-header h3 {
+.article .article__quoter .article__quoter-header h3.article__quoter-text {
   color: #20202b;
   font-family: "montserrat-regular", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
   margin-left: 10px;
+  margin-top: 0;
 }
 
 .article .article__quoter-text {
