@@ -16,10 +16,16 @@ $(function() {
 			var count = 0;
 			$('.article__count-list li p').each(function(){
 				count++;
-				console.log($(this))
 				$(this).before('<span class="article_span-count">'+count+'.</span>')
 			})
 		}
+
+		$('.img-ltl-wrap').click(function(e){
+			e.preventDefault();
+			var src = $(this).find('img').attr('src');
+			$('.gallery .img-wrap img').attr('src', src);
+		})
+
 		return 0;
 	}
 	//end of article scripts
@@ -43,7 +49,7 @@ $(function() {
 		});
 	}
 
-	if(!isMobile(1024)){
+	if(!isMobile(1023)){
 		screenScrollier(); //fullScreen scrolling navigator
 	}
 	fixedMenu(); //fixed menu
@@ -155,6 +161,20 @@ $('.article__video')[0].play();
 		myMap.controls.remove('zoomControl');
     }
     /**************************************************************************/
+
+
+	$('.popup').mCustomScrollbar({
+        scrollInertia: 0,
+        scrollButtons: {enable: true},
+    });
+	
+
+
+
+
+
+
+
 
    
 });
@@ -374,6 +394,12 @@ function popup(){
 
 		$('.popap__wrapper').fadeIn(300);
 		$(popup).fadeIn(300);
+		//scroll adecvat
+		$('.popup').mCustomScrollbar({
+	        scrollInertia: 0,
+	        scrollButtons: {enable: true},
+	        scrollbarPosition: "outside"
+	    });
 	})
 	$(document).on('click','.close', function(){
 		$('.popap__wrapper').fadeOut(300);
