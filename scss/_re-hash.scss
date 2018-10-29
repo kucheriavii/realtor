@@ -22,13 +22,16 @@
 	display: block;
 	width: 370px;
 	height: 210px;
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
 	border-radius: 10px;
 	background-color: #ffffff;
 	justify-content: space-between;
 	margin-left: 30px;
 	margin-bottom: 30px;
 	padding: 20px 30px;
+	&:hover{
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+	}
 	&:first-child{
 		margin-left: 0;
 	}

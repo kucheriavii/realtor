@@ -8074,8 +8074,8 @@ strong {
   display: block;
   width: 370px;
   height: 210px;
-  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
   -webkit-border-radius: 10px;
           border-radius: 10px;
   background-color: #ffffff;
@@ -8086,6 +8086,11 @@ strong {
   margin-left: 30px;
   margin-bottom: 30px;
   padding: 20px 30px;
+}
+
+.re-hash__cart:hover {
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .re-hash__cart:first-child {
@@ -10867,6 +10872,7 @@ strong {
   outline: 0;
   text-decoration: none;
   color: #fff;
+  background-color: #e77051;
 }
 
 .disabled {
