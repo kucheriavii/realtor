@@ -3040,6 +3040,57 @@ html {
   animation-name: shake;
 }
 
+@-webkit-keyframes shakeY {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes shakeY {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(0px, -5px, 0);
+    transform: translate3d(0px, -5px, 0);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(0px, 10px, 0);
+    transform: translate3d(0px, 10px, 0);
+  }
+}
+
+.shakeY {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
+
 @-webkit-keyframes headShake {
   0% {
     -webkit-transform: translateX(0);
@@ -7710,6 +7761,9 @@ strong {
 }
 
 .main-page__scroll img {
+  -webkit-animation: shakeY 5s linear infinite;
+          animation: shakeY 5s linear infinite;
+  cursor: pointer;
   width: 14px;
   height: 39px;
 }

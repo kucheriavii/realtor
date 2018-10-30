@@ -107,7 +107,11 @@
 	position: absolute;
 	left: 50%;
 	bottom: 70px;
+	img:hover{
+	}
 	img{
+		animation: shakeY 5s linear infinite;
+		cursor: pointer;
 		width: 14px;
 		height: 39px;
 
