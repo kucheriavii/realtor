@@ -7628,7 +7628,6 @@ strong {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: rgba(35, 35, 57, 0.4);
 }
 
 .main-navbar, .main-navbar--fixed {
@@ -8429,6 +8428,7 @@ strong {
           background-size: cover;
   background-position: 50%;
   position: relative;
+  height: 100vh;
 }
 
 .positive-flat .container, .positive-flat .row, .positive-flat .col-12 {
@@ -8755,7 +8755,7 @@ strong {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
+  position: static;
   top: 0;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -10967,6 +10967,22 @@ strong {
   /* margin: 0 auto; */
 }
 
+.popap__wrapper .popup-thk {
+  display: none;
+}
+
+.popap__wrapper .popup-thk .container, .popap__wrapper .popup-thk .row {
+  height: 100%;
+}
+
+.popap__wrapper .popup-thk .tnk-block {
+  top: initial;
+}
+
+section {
+  min-height: 100vh;
+}
+
 /******calculator**********/
 #domclick__calculator {
   margin-top: 29px;
@@ -12207,6 +12223,25 @@ strong {
   }
   .popup-free-sell .info-text, .popup-ask .info-text {
     min-height: 120px;
+  }
+  .popup-thk img {
+    display: block;
+    height: 100%;
+    height: 70vh;
+    bottom: 0;
+    float: left;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 1;
+    width: auto;
+  }
+  .popup-thk .tnk-block {
+    height: auto;
+    max-height: 200px;
+    bottom: 0;
   }
 }
 

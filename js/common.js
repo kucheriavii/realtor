@@ -3,10 +3,10 @@ $(function() {
 	if($('body').hasClass('articlePage')){
 
 		$('.video').parent().click(function () {
-		  if($(this).children(".video").get(0).paused){        
-			  	$(this).children(".video").get(0).play();   
+		  if($(this).children(".video").get(0).paused){
+			  	$(this).children(".video").get(0).play();
 			  	$(this).children(".playpause").fadeOut();
-		    }else{       
+		    }else{
 				$(this).children(".video").get(0).pause();
 				$(this).children(".playpause").fadeIn();
 		    }
@@ -31,7 +31,7 @@ $(function() {
 	//end of article scripts
 
 	mainscreenVideoBackground(); //main-page video background
-	
+
 	if(isMobile(768)){
 		tips(); //most inportant thing
 	}
@@ -57,7 +57,7 @@ $(function() {
 	resonToTrastCount();
 	inputChoose();
 	popupReport();
-		
+
 	$('.main-page__scroll').on('click',function(){
 		$(window).scrollTo(".about-me",500);
 		console.log('test')
@@ -69,12 +69,12 @@ $(function() {
 	});
 
 	/*************************************************************************/
-	
+
 $('.video').parent().click(function () {
-  if($(this).children(".video").get(0).paused){        
-	  	$(this).children(".video").get(0).play();   
+  if($(this).children(".video").get(0).paused){
+	  	$(this).children(".video").get(0).play();
 	  	$(this).children(".playpause").fadeOut();
-    }else{       
+    }else{
 		$(this).children(".video").get(0).pause();
 		$(this).children(".playpause").fadeIn();
     }
@@ -88,7 +88,7 @@ $('.article__video')[0].play();
 
 
 	/*************************************************************************/
-	
+
     $(document).on('click', '.play_button', function(){
         player.playVideo();
         setTimeout(function(){
@@ -129,16 +129,16 @@ $('.article__video')[0].play();
     var myMap,
         myPlacemark;
 
-    function init(){     
+    function init(){
         myMap = new ymaps.Map("map", {
             center: [55.753640, 37.580308],
             zoom: 15,
-           
+
         });
 
-        myPlacemark = new ymaps.Placemark([55.752040, 7.586158], 
-        	{ 
-	        	hintContent: 'Moscow!', 
+        myPlacemark = new ymaps.Placemark([55.752040, 7.586158],
+        	{
+	        	hintContent: 'Moscow!',
 	        	balloonContent: 'Realtor'
         	},{
             iconImageSize: [48, 150],
@@ -150,7 +150,7 @@ $('.article__video')[0].play();
             balloonContent: 'test',
             iconContent: '12'
         }, {
-            
+
             // Своё изображение иконки метки.
             iconLayout: "default#image",
             iconImageHref: '../img/mapicon.png',
@@ -170,7 +170,6 @@ $('.article__video')[0].play();
         scrollInertia: 0,
         scrollButtons: {enable: true},
     });
-	
 
 
 
@@ -179,7 +178,8 @@ $('.article__video')[0].play();
 
 
 
-   
+
+
 });
 function fixedPriceInCalculator(){
 	var start = $('.calculator__parameters-base-rate').offset().top;
@@ -191,7 +191,7 @@ function fixedPriceInCalculator(){
 
 		if(position>start){
 			$('.calculator__parameters-base-rate').addClass('fix');
-		} 
+		}
 
 		if(position<start){
 			$('.calculator__parameters-base-rate').removeClass('fix')
@@ -199,7 +199,7 @@ function fixedPriceInCalculator(){
 		if(position>finish){
 			$('.calculator__parameters-base-rate').removeClass('fix')
 		}
-		
+
 	})
 }
 
@@ -231,7 +231,7 @@ function tips(){
 }
 
 function fixedMenu(){
-	if(!isMobile(768) && !$('.main-navbar--fixed').hasClass('noscript')){ //класс noscript в фиксированом меню 
+	if(!isMobile(768) && !$('.main-navbar--fixed').hasClass('noscript')){ //класс noscript в фиксированом меню
 		$(window).on('load scroll', function(e){
 			if($(window).scrollTop()>=$('.main-page__description-wrap').height()-1){
 				$('.main-navbar').fadeOut();
@@ -289,7 +289,7 @@ function fixedMenu(){
 				$('.menu__item .menu__link').removeClass('active');
 				$('.menu__item .menu__link[data-scrollto="map"]').addClass('active');
 		}
-		
+
 	})
 	//adaptive. burger
 		$('.hamburger').click(function(e){
@@ -301,7 +301,7 @@ function fixedMenu(){
 				$('.tablet-none').addClass('active');
 			}
 		})
-} 
+}
 
 
 function mainscreenVideoBackground(){
@@ -309,11 +309,14 @@ function mainscreenVideoBackground(){
 	$('.main-screen').vide({
 		mp4: src+".mp4",
 		webm: src+".webm",
-		jpg: src+".png"
+		jpg: "../Video/close.png"
 	}, {
 		resizing: true,
 	});
 
+	$('.main-screen').css({
+		"background-color": "rgba(35,35,57,.4)"
+	})
 }
 
 function screenScrollier(){
@@ -381,7 +384,7 @@ function anim(when,what,effect){
 		 $(document).on('scroll', function(e){
 		 	if($(document).scrollTop()>=$(when).offset().top-10){
 				$(what).addClass(effect+' animated ');
-				
+
 			}
 		 })
 		$(window).on('load', function(e){
@@ -407,7 +410,14 @@ function popup(){
 	$(document).on('click','.close', function(){
 		$('.popap__wrapper').fadeOut(300);
 		$('.popup').fadeOut();
+		$('.popup-thk').fadeOut();
 		$.scrollify.enable();
+	})
+
+	$(document).on('click','.popup .button', function(e){
+		e.preventDefault();
+		$('.popup').fadeOut();
+		$('.popup-thk').fadeIn();
 	})
 }
 
@@ -428,7 +438,7 @@ function sberbank(){
 		 product: 4, // 4 - это новостройка, укажите значение, которое нужно вам
 		 realtyDiscount: true/false // оставьте одно значение
 		 },
-		 excludedDiscounts: ['realtyDiscount'], // укажите дисконт, который нужно скрыть 
+		 excludedDiscounts: ['realtyDiscount'], // укажите дисконт, который нужно скрыть
 
 
 		// Также, можно подписаться на события. Необходимо заменить пустые функции на свои реализации
