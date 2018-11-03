@@ -57,9 +57,10 @@ $(function() {
 	resonToTrastCount();
 	inputChoose();
 	popupReport();
-
+	messangersActive();
 	$('.main-page__scroll').on('click',function(){
-		$(window).scrollTo(".about-me",500);
+		var scrollPosition = $(".about-me").offset().top - 80;
+		$(window).scrollTo(scrollPosition,500);
 		console.log('test')
 	})
 
@@ -101,7 +102,7 @@ $('.article__video')[0].play();
 	$('.feedback__item-list').slick({
 		 infinite: true,
 		  slidesToShow: 3,
-		  slidesToScroll: 1,
+		  slidesToScroll: 3,
 		   responsive: [
 		    {
 		      breakpoint: 1200,
@@ -121,6 +122,7 @@ $('.article__video')[0].play();
 		      }
 		    }]
 	});
+
 
 
 
@@ -153,7 +155,7 @@ $('.article__video')[0].play();
 
             // Своё изображение иконки метки.
             iconLayout: "default#image",
-            iconImageHref: '../img/mapicon.png',
+            iconImageHref: '../img/mapicon2.png',
             iconImageSize: [70, 70],
 	        iconImageOffset: [0, -70],
         });
@@ -182,8 +184,8 @@ $('.article__video')[0].play();
 
 });
 function fixedPriceInCalculator(){
-	var start = $('.calculator__parameters-base-rate').offset().top;
-	var finish = $('.attention').offset().top-200;
+	var start = $('.calculator__parameters-base-rate').offset().top-95;
+	var finish = $('.attention').offset().top-400;
 	$(document).on('scroll', function(e){
 		var distance = $('.calculator__parameters-base-rate').offset().top;
 		var position = $(document).scrollTop();
@@ -191,13 +193,14 @@ function fixedPriceInCalculator(){
 
 		if(position>start){
 			$('.calculator__parameters-base-rate').addClass('fix');
+
 		}
 
 		if(position<start){
-			$('.calculator__parameters-base-rate').removeClass('fix')
+			$('.calculator__parameters-base-rate').removeClass('fix');
 		}
 		if(position>finish){
-			$('.calculator__parameters-base-rate').removeClass('fix')
+			$('.calculator__parameters-base-rate').removeClass('fix');
 		}
 
 	})
@@ -302,13 +305,17 @@ function fixedMenu(){
 			}
 		})
 }
-
+$('.about-me').mousemove(function(e){
+  //  var X = e.pageX; // положения по оси X
+  //  var Y =  e.pageY - $('.about-me').offset().top; // положения по оси Y
+  //  console.log("X: " + X + " Y: " + Y); // вывод результата в консоль
+});
 
 function mainscreenVideoBackground(){
 	var src = $(".main-page").data('src');
 	$('.main-screen').vide({
-		mp4: src+".mp4",
-		webm: src+".webm",
+		//mp4: src+".mp4",
+		//webm: src+".webm",
 		jpg: "../Video/close.png"
 	}, {
 		resizing: true,
@@ -338,7 +345,6 @@ function screenScrollier(){
 
 //animation list
 function animationList(){
-
 	anim(".about-me",".about-me__item:nth-child(1)","fadeInLeft");
 	anim(".about-me",".about-me__item:nth-child(2)","fadeInLeft");
 	anim(".about-me",".about-me__item:nth-child(3)","fadeInLeft");
@@ -379,20 +385,7 @@ function animationList(){
 
 
 
-//animation function
-function anim(when,what,effect){
-		 $(document).on('scroll', function(e){
-		 	if($(document).scrollTop()>=$(when).offset().top-10){
-				$(what).addClass(effect+' animated ');
 
-			}
-		 })
-		$(window).on('load', function(e){
-			if($(document).scrollTop()>=$(when).offset().top-100){
-				$(what).addClass(effect+' animated ');
-			}
-		})
-	}
 
 function popup(){
 	$(document).on('click','.on-popup', function(){
@@ -458,12 +451,12 @@ function sberbank(){
 
 function anim(when,what){
 	$(document).on('scroll', function(e){
-		if($(document).scrollTop()>=$(when).offset().top-10){
+		if($(document).scrollTop()>=$(when).offset().top-400){
 			$(what).addClass('fadeInLeft animated');
 		}
 	})
 	$(window).on('load', function(e){
-		if($(document).scrollTop()>=$(when).offset().top-10){
+		if($(document).scrollTop()>=$(when).offset().top-800){
 			$(what).addClass('fadeInLeft animated');
 		}
 	})
@@ -493,5 +486,16 @@ function popupReport(){
 	$(document).on('keyup', '#flet-desc', function(){
 		var length = $(this).val().length;
 		$('.textarea-sym-left').text("Введено "+length+" знаков");
+	})
+}
+
+function messangersActive(){
+	$(document).on('click', '.map-messengers-link img', function(e){
+		e.preventDefault();
+		if($(this).parents('.map-messengers-link').hasClass('active')){
+			$(this).parents('.map-messengers-link').removeClass('active');
+		} else {
+			$(this).parents('.map-messengers-link').addClass('active');
+		}
 	})
 }

@@ -72,11 +72,9 @@ b, strong {
 .re-hash,.positive-block,.additional-options__shadows,.positive-flat,.my-proposition,.official-partners,.feedback,.calculator,.attention{
 	padding-top: 80px;
 }
-.reasons-to-trust .reasons-to-trust__fon-wrap{
-	padding-top: 172px;
-}
-.most-important-things .most-important-things__wrap{
-	padding-top: 80px;
+
+.re-hash,.positive-block,.additional-options__shadows,.positive-flat,.my-proposition,.official-partners,.feedback,.calculator,.attention{
+	padding-top: 0px;
 }
 .main-navbar--fixed{
 	@extend .main-navbar;
@@ -170,7 +168,7 @@ b, strong {
 	}
 }
 section{
-	min-height: 100vh;
+//	min-height: 100vh;
 }
 /******calculator**********/
 

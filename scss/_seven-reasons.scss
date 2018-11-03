@@ -2,12 +2,15 @@
 	background-image: url("../img/map-img.png");
 	.reasons-to-trust__fon-wrap{
 		min-width: 100%;
-		min-height: 100%; 
+	//	min-height: 100%;
 		background: rgba(255,255,255,0.7);
-		padding-top: 92px;
+		//padding-top: 92px;
 	}
 }
-
+.reasons-to-trust .reasons-to-trust__fon-wrap{
+	padding-top: $pTop;
+	padding-bottom: 51px;
+}
 .reasons-block{
 	width: 710px;
 	.reasons-to-trust__header{
@@ -54,6 +57,7 @@
 	width: 100%;
 	justify-content: flex-end;
 	margin-top: 26px;
+	height: 100%;
 }
 .reasons-to-trust__BTI{
 	width: 370px;

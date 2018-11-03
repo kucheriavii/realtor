@@ -2,7 +2,7 @@
 	padding-top: 80px;
 	height: 100vh;
 	width: 100%;
-	position: relative;	
+	position: relative;
 	.map-yandex{
 		position: absolute;
 		left: 0;
@@ -72,5 +72,41 @@
 	.ac{
 		display: flex;
 		align-items: center;
+	}
+}
+
+.map-messengers{
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	margin-top: 21px;
+	margin-left: 30px;
+	.map-messengers-item{
+
+		margin-right: 21px;
+	}
+	.map-messengers-link{
+		display: flex;
+		align-items: center;
+		outline: 0;
+		img{
+			height: 50px;
+			width: 50px;
+			display: block;
+			object-fit: cover;
+			margin-right: 8px;
+		}
+		.messenger-link-attr{
+			width: 0;
+			overflow: hidden;
+			transition: all 1s;
+			color: #20202b;
+			text-decoration: none;
+		}
+		&.active .messenger-link-attr{
+			width: auto;
+			transition: all 1s;
+		}
 	}
 }

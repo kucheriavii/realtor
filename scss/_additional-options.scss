@@ -10,20 +10,21 @@
 	}
 	.additional-options__img-bg{
 		position: relative;
-		width: 312px;
-		min-width: 312px;
-		max-width: 312px;
-		height: 519px;
-		background-image: url('../img/man.png');
-		background-size: 312px 519px;
-		background-repeat: no-repeat;
-		background-position: 0 100%;
-		align-self: flex-end;
-		margin-right: 45px;
-		z-index: 9;
+    width: 400px;
+    min-width: 400px;
+    max-width: 400px;
+    height: 100%;
+    background-image: url(../img/man.png);
+    background-size: 356px auto;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    align-self: flex-end;
+    margin-right: 45px;
+    z-index: 9;
 	}
 	.additional-options__wrap{
-		margin-top: 63px;
+		margin-top: $pTop;
+		margin-bottom: $pTop;
 		display: flex;
 		padding-right: 69px;
 		padding-left: 43px;
@@ -31,7 +32,7 @@
 	}
 	.additional-options__content-header{
 		font: 40px/50px "montserrat-regular", sans-serif;
-		color: #20202b;	
+		color: #20202b;
 	}
 	.additional-options__content-list{
 		display: block;
@@ -44,7 +45,7 @@
 			flex-wrap: wrap;
 			justify-content: center;
 			max-width: 170px;
-			margin-right: 63px;
+			margin-right: 21px;
 			width: 120px;
 			align-items: flex-start;
 			&:nth-child(2){
@@ -91,7 +92,8 @@
 	background-color: #7e89a1;
 	position: absolute;
 	left: 0;
-	padding-left: 400px;
+	padding-left: 480px;
+	padding-right: 21px;
 	font: 14px/20px "opensans-regular", sans-serif;
 	font-weight: 400;
 	color: #fff;

@@ -81,6 +81,12 @@
 	    padding: 22px;
 	    z-index: 10;
 	}
+	.about-me{
+		background-image: url("../img/about-me-background-fon-test.jpg");
+		.info{
+			width: 500px;
+		}
+	}
 	.most-important-things__item.left-item,
 	.most-important-things__item.center-item,
 	.most-important-things__item.right-item{

@@ -11,7 +11,7 @@
 	color: #20202b;
 	width: 700px;
 	text-align: center;
-	margin: 63px auto 48px;
+	margin: 0px auto 48px;
 }
 .most-important-things__item-img-wrap{
 	width: 370px;
@@ -45,7 +45,7 @@
 			width: 30px;
 			height: 60px;
 			position: absolute;
-			left: 100%;
+			left: 99%;
 			top: 0;
 			font-weight: 700;
 			text-transform: uppercase;
@@ -84,6 +84,10 @@
 		font-weight: 700;
 		text-align: center;
 	}
+}
+.most-important-things .most-important-things__wrap{
+	padding-top: $pTop;
+	padding-bottom: $pTop;
 }
 .most-important-things__item-text{
 	color: #20202b;

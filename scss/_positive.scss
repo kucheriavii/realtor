@@ -4,6 +4,7 @@
 	background-position: 50%;
 	position: relative;
 	height: 100vh;
+	height: calc(100vh - 80px);
 	.container, .row, .col-12{
 		height: 100%;
 	}
