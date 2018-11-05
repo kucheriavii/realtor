@@ -83,8 +83,8 @@
 	margin-top: 21px;
 	margin-left: 30px;
 	.map-messengers-item{
-
 		margin-right: 21px;
+
 	}
 	.map-messengers-link{
 		display: flex;
@@ -96,6 +96,13 @@
 			display: block;
 			object-fit: cover;
 			margin-right: 8px;
+			filter: grayscale(100%);
+			transition: all 1s;
+		}
+	&.active img{
+		transition: all 1s;
+		filter: grayscale(0%);
+
 		}
 		.messenger-link-attr{
 			width: 0;
