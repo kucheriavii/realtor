@@ -1521,6 +1521,20 @@
 	.additional-options .additional-options__content-header{
 		margin-top: 10px;
 	}
+	.additional-options__content{
+		margin-bottom: 0;
+	}
+	.additional-options .additional-options__content-list .additional-options__content-item{
+		min-width: 100%;
+		width: 100%;
+		&:first-child{
+			width: 100%;
+			min-width: 100%;
+		}
+		&:last-child{
+			margin-bottom: 40px;
+		}
+	}
 	.reasons-block .reasons-to-trust__header, .re-hash__header, .additional-options .additional-options__content-header,.most-important-things__header {
     font-size: 28px;
     line-height: 40px;
@@ -1686,6 +1700,12 @@
 	.attention .attention__dont-disturb-block .attention__dont-disturb-list .attention__dont-disturb-item{
 		margin-left: 5px;
 	}
+	.feedback .feedback__item-list .slick-prev, .feedback .feedback__item-list .slick-next {
+    top: 260px;
+    z-index: 999;
+    display: none !important;
+	}
+
 }
 
 
