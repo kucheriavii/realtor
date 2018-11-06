@@ -2,6 +2,7 @@
 	height: calc(100vh - 80px);
 	display: flex;
 	flex-direction: column;
+	min-height: 600px;
 	input[name='bank']{
 		display: none;
 	}
@@ -61,6 +62,7 @@
 }
 
 .my-proposition__banks{
+	min-height: 270px;
 	.my-proposition__banks-header{
 		color: #7e89a1;
 		font-family: "montserrat-regular", sans-serif;

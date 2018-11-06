@@ -29,10 +29,39 @@
 		color: $accentColor;
 		font: 14px/25px "montserrat-regular", sans-serif;
 		font-weight: 500;
+		text-decoration: none;
+		position: relative;
+		&:after{
+			content: "";
+			height: 3px;
+			width: 0;
+			background-color: #7e89a1;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			transition: all 1s;
+			transition-delay:0.3s;
+			transform: translateX(-50%);
+			left: 50%;
+		}
 		&.active{
-			text-decoration: underline !important;
+			//text-decoration: underline !important;
 			color: #7e89a1;
 			padding-bottom: 2px;
+			position: relative;
+			&:after{
+				content: "";
+				height: 3px;
+				width: 100%;
+				background-color: #7e89a1;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				transition: all 0.3s;
+				transition-delay:0.3s;
+				transform: translateX(-50%);
+				left: 50%;
+			}
 		}
 		&:active, &:focus{
 			text-decoration: none;
@@ -40,6 +69,7 @@
 		}
 		&:hover{
 			text-decoration: underline;
+			text-decoration: none;
 		}
 	}
 	.logo-icon{
@@ -117,5 +147,33 @@
 		width: 14px;
 		height: 39px;
 
+	}
+}
+
+
+.js-video,.js-canvas{
+	object-fit: contain;
+	 background-color: rgba(0,0,0,.6);
+}
+.iphone-video{
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	display: none;
+	&.iphone-on{
+		display: block;
+		background-color: rgba(0,0,0,.9);
+		z-index: 0;
+		position: absolute;
+		&:after{
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0,0,0,.2);
+		}
 	}
 }

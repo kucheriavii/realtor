@@ -3,6 +3,7 @@
 
 /*==========  Desktop First  ==========*/
 
+
 // ≥1200
 @include media-breakpoint-down(lg) {
 	.menu-style, .main-navbar .menu, .main-navbar--fixed .menu{
@@ -489,6 +490,7 @@
 	.map{
 		margin-top: 0;
 		padding-top: 0;
+		min-height: auto;
 	}
 	.map-contact-wrap .ac{
 		align-items: flex-start;
@@ -1704,6 +1706,13 @@
     top: 260px;
     z-index: 999;
     display: none !important;
+	}
+	.main-navbar .contacts .contacts__phone, .main-navbar--fixed .contacts .contacts__phone {
+    display: block;
+    font: 16px "montserrat-bold", sans-serif;
+    line-height: 25px;
+    color: #fff;
+    font-size: 14px;
 	}
 
 }

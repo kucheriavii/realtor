@@ -123,8 +123,28 @@ $('.article__video')[0].play();
 		    }]
 	});
 
+	/**************************************************************************/
+	var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+
+	if (isIOS) {
 
 
+			var video = '<video class="video js-video" muted><source src="video/test.mp4" type="video/mp4">Your browser does not support HTML5 video.</video> ';
+			var canvas = '<canvas class="canvas js-canvas"></canvas>';
+			var timeline = '<div class="video-timeline js-timeline"><div class="video-timeline-passed js-timeline-passed"></div></div>';
+			$('.iphone-video').addClass('iphone-on').append(video, canvas, timeline);
+
+
+
+		var canvasVideo = new CanvasVideoPlayer({
+			videoSelector: '.js-video',
+			canvasSelector: '.js-canvas',
+			timelineSelector: '.js-timeline',
+			audio: false,
+			autoplay: true,
+			loop: true
+		});
+	}
 
 	/************************************************************************/
 	$(document).ready(function() {
@@ -263,12 +283,12 @@ function fixedMenu(){
 	})
 	//add underline to menu
 	$(document).on("scroll load", function(){
-		var aboutMe = $('.about-me').offset().top,
-			reasonsToTrust = $('.reasons-to-trust').offset().top,
-			positiveFlat = $('.positive-flat').offset().top,
-			feedback = $('.feedback').offset().top,
-			calculator = $('.calculator').offset().top,
-			map = $('.map').offset().top,
+		var aboutMe = $('.about-me').offset().top-80,
+			reasonsToTrust = $('.reasons-to-trust').offset().top-80,
+			positiveFlat = $('.positive-flat').offset().top-80,
+			feedback = $('.feedback').offset().top-80,
+			calculator = $('.calculator').offset().top-80,
+			map = $('.map').offset().top-80,
 			actual = $(document).scrollTop();
 		//underline in menu
 		if (actual < aboutMe){
