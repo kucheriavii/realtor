@@ -9034,6 +9034,7 @@ strong {
 .calculator .individual-calc {
   margin-top: 21px;
   margin-top: 21px;
+  margin-bottom: 21px;
 }
 
 .calculator__header {
@@ -9374,7 +9375,7 @@ strong {
   padding-top: 60px;
   /* background-position: 0 60px; */
   /* min-height: 760px; */
-  margin-bottom: 60px;
+  margin-bottom: 0px;
   /* max-height: 600px; */
   max-height: auto;
 }
@@ -9648,7 +9649,7 @@ strong {
 
 .news__item {
   width: 370px;
-  margin: 0 auto;
+  margin: 0 10px;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   -webkit-border-radius: 10px;
@@ -11514,7 +11515,7 @@ strong {
   }
   .additional-options .additional-options__img-bg {
     position: relative;
-    top: 51px;
+    top: 90px;
     z-index: 9;
   }
   .most-important-things__item-name:after {
@@ -11579,6 +11580,9 @@ strong {
   }
   .attention {
     margin-bottom: 0;
+  }
+  .news__item {
+    margin: 15px 40px;
   }
 }
 
@@ -11902,7 +11906,7 @@ strong {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
-    top: 51px;
+    top: 80px;
     z-index: 1;
     display: block;
   }
@@ -11949,9 +11953,74 @@ strong {
   .news__item-video {
     width: 100%;
   }
+  .news__item {
+    margin: 15px 15px;
+  }
+  .re-hash__cart-wrap .slick-initialized .slick-slide {
+    margin-right: 15px;
+  }
+  .map .map-consult-box {
+    margin-top: 32px;
+    margin-right: 20px;
+  }
+  .landscape .re-hash {
+    min-height: 400px;
+  }
+  .landscape .interesting-things__header, .landscape .map .map-contacts .map-header, .landscape .feedback h2.feedback__header, .landscape .about-me__block .info h3, .landscape .reasons-block .reasons-to-trust__header, .landscape .re-hash__header, .landscape .additional-options .additional-options__content-header, .landscape .most-important-things__header, .landscape .reasons-block .reasons-to-trust__header .gray-text, .landscape .attention .attention__header, .landscape .attention .important-thing .important-head, .landscape .calculator__header, .landscape .my-proposition__banks .my-proposition__banks-header {
+    font-size: 22px;
+    line-height: 35px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .landscape .main-page__scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 22px;
+  }
+  .landscape .most-important-things__header {
+    margin-bottom: 15px;
+  }
+  .landscape .most-important-things .most-important-things__wrap {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .landscape .section.calculator {
+    padding-top: 0;
+  }
+  .landscape .positive-flat .desc-wrap {
+    height: 50px;
+    bottom: 25px;
+  }
+  .landscape .positive-flat .desc-wrap:after, .landscape .positive-flat .desc-wrap:before {
+    height: 50px;
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-repeat: no-repeat;
+    width: 22px;
+  }
+  .tablet-portrait .about-me__block {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .tablet-portrait .about-me__block .info {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767.98px) {
+  .re-hash__cart-wrap .slick-slide {
+    margin: auto !important;
+  }
+  .re-hash__cart-wrap .slick-slide div:first-child {
+    width: 90%;
+    margin: auto;
+  }
   .main-page__description-wrap .main-page__description-name {
     font-size: 25px;
     display: inline-block;
@@ -12474,9 +12543,28 @@ strong {
             justify-content: center;
     text-align: center;
   }
+  .about-me__block .info {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .my-proposition__banks .my-proposition__banks-list, .my-proposition__banks {
+    display: none;
+  }
+  .section.my-proposition {
+    min-height: auto;
+  }
+  .most-important-things .most-important-things__wrap {
+    min-height: auto;
+  }
+  .news__item {
+    margin: 15px 5px;
+  }
 }
 
 @media only screen and (max-width: 550px) {
+  .my-proposition__banks .my-proposition__banks-list .my-proposition__bank {
+    width: 100%;
+  }
   .article-content .article__text-block {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -12499,6 +12587,30 @@ strong {
     margin-left: 0;
   }
   .main-navbar, .main-navbar--fixed, .main-navbar--fixed {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .about-me__block .info {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .news__item {
+    width: 90%;
+    margin: 15px auto !important;
+  }
+  .additional-options__content {
+    margin-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .additional-options .additional-options__content-header {
+    margin-top: 0px;
+  }
+  .footer {
+    margin-top: 25px;
+    font: 14px/20px "opensans-regular", sans-serif;
+    color: #fff;
+    padding-bottom: 127px;
     padding-right: 10px;
     padding-left: 10px;
   }
@@ -12714,6 +12826,17 @@ strong {
   .map .map-contacts {
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+  .map-messengers .map-messengers-link img {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+  }
+  .map-messengers .map-messengers-link.active img {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+  }
+  .map-messengers .map-messengers-link.active .messenger-link-attr {
+    width: 0;
   }
   .interesting-things__header {
     font-size: 32px;
@@ -13008,11 +13131,46 @@ strong {
   .about-me__block {
     padding-bottom: 10px;
   }
-  .interesting-things__header, .map .map-contacts .map-header, .feedback h2.feedback__header, .about-me__block .info h3, .reasons-block .reasons-to-trust__header, .re-hash__header, .additional-options .additional-options__content-header, .most-important-things__header, .reasons-block .reasons-to-trust__header .gray-text {
+  .interesting-things__header, .map .map-contacts .map-header, .feedback h2.feedback__header, .about-me__block .info h3, .reasons-block .reasons-to-trust__header, .re-hash__header, .additional-options .additional-options__content-header, .most-important-things__header, .reasons-block .reasons-to-trust__header .gray-text, .attention .attention__header, .attention .important-thing .important-head, .calculator__header, .my-proposition__banks .my-proposition__banks-header {
     font-size: 22px;
     line-height: 35px;
     text-align: center;
     font-weight: bold;
+  }
+  .calculator__parameters-base-rate {
+    margin-bottom: 10px;
+  }
+  .calculator__header {
+    margin-top: 11px;
+    margin: 11px;
+  }
+  .calculator__parameters-base-rate .base-rate__val-cur {
+    font-size: 22px;
+  }
+  .right-clc .calculator__option-name {
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  .calculator__option-long:first-child {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .calculator__option-name {
+    margin-bottom: 5px;
+  }
+  .calculator .right-clc {
+    margin-top: 0;
+  }
+  .calculator .calculator__option-long {
+    margin-top: 0;
+  }
+  .calculator__option-panel {
+    margin-bottom: 20px;
+  }
+  .calculator__option-long .calculator__option-name {
+    margin: 0 auto;
+    margin-bottom: 0;
+    margin-top: 0px;
   }
   .reasons-block {
     padding-right: 10px;
@@ -13034,6 +13192,32 @@ strong {
   .offers-info p {
     font-size: 14px;
     line-height: 21px;
+  }
+  .map .map-office-box {
+    margin-top: 10px;
+  }
+  .map-contact-wrap .ac {
+    margin-top: 10px;
+  }
+  .map-contact-wrap {
+    margin-bottom: 10px;
+  }
+  .attention .attention__header {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .attention .attention__desc {
+    margin-top: 10px;
+  }
+  .attention .important-thing {
+    margin-top: 10px;
+  }
+  .section.calculator {
+    padding-top: 0;
+  }
+  .individual-calc p {
+    font-size: 18px;
+    line-height: 22px;
   }
   .offers-info {
     width: 90%;
