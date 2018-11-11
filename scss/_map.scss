@@ -1,5 +1,5 @@
 .map{
-	padding-top: 80px;
+	padding-top: 10px;
 	height: 100vh;
 	width: 100%;
 	position: relative;
@@ -8,7 +8,7 @@
 		position: absolute;
 		left: 0;
 		right: 0;
-		top: 80px;
+		top: 10px;
 		bottom: 0;
 		background-color: rgba(255,230,255,.7);
 	}
@@ -18,7 +18,7 @@
 		background-color: #ffffff;
 		padding: 42px 10px 60px 65px;
 		width: 570px;
-		height: 640px;
+		height: 600px;
 		.map-header{
 			color: #20202b;
 			font: 40px "montserrat-regular", sans-serif;
@@ -60,7 +60,7 @@
 		margin-right: 20px;
 	}
 	.map-consult-box{
-		margin-top: 80px;
+		margin-top: 40px;
 		margin-right: 20px;
 	}
 }

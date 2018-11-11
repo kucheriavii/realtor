@@ -154,6 +154,8 @@
 .js-video,.js-canvas{
 	object-fit: contain;
 	 background-color: rgba(0,0,0,.6);
+	 height: 100%;
+	 width: 100%;
 }
 .iphone-video{
 	height: 100vh;

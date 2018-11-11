@@ -625,17 +625,24 @@
 	}
 	.additional-options .additional-options__img-bg {
     position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
-    top: 80px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: -170px;
     z-index: 1;
     display: block;
+    -webkit-background-size: 250px 250px;
+    background-size: 250px;
+    padding-right: 0;
+    margin-right: 0;
+    background-position-x: 50%;
 	}
 	.additional-options{
 		min-height: 890px;
 	}
 	.additional-options__content-history{
-		margin-top: 230px;
+		margin-top: 300px;
 		position: relative;
 		z-index: 9;
 	}
@@ -1247,6 +1254,7 @@
 	}
 	.my-proposition__banks .my-proposition__banks-list .my-proposition__bank{
 		width: 100%;
+		margin-bottom: 25px;
 	}
 	.my-proposition__banks .my-proposition__banks-header{
 		font-size: 31px;
