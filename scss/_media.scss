@@ -425,7 +425,7 @@
 		color: #fff;
 	}
 	.reasons-to-trust .reasons-to-trust__fon-wrap{
-		padding-bottom: 120px;
+		padding-bottom: 40px;
 	}
 	.reasons-to-trust__ad{
 		justify-content: center;
@@ -690,7 +690,7 @@
 		.re-hash{
 			min-height: 400px;
 		}
-		.interesting-things__header, .map .map-contacts .map-header,.feedback h2.feedback__header,	.about-me__block .info h3, .reasons-block .reasons-to-trust__header, .re-hash__header, .additional-options .additional-options__content-header, .most-important-things__header,.reasons-block .reasons-to-trust__header .gray-text ,.attention .attention__header,.attention .important-thing .important-head,.calculator__header,.my-proposition__banks .my-proposition__banks-header{
+		.interesting-things__header, .map .map-contacts .map-header,.feedback h2.feedback__header,	.about-me__block .info h3, .reasons-block .reasons-to-trust__header, .re-hash__header, .additional-options .additional-options__content-header, .most-important-things__header,.reasons-block .reasons-to-trust__header .gray-text ,.attention .attention__header,.attention .important-thing .important-head,.calculator__header,.my-proposition__banks .my-proposition__banks-header, .my-proposition__banks .my-proposition__banks-header{
 		    font-size: 22px;
 		    line-height: 35px;
 		    text-align: center;
@@ -735,6 +735,7 @@
 			}
 		}
 	}
+
 
 }
 
@@ -1239,6 +1240,16 @@
 	}
 	.news__item {
     margin: 15px 5px;
+	}
+	.my-proposition__banks .my-proposition__banks-list, .my-proposition__banks{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.my-proposition__banks .my-proposition__banks-list .my-proposition__bank{
+		width: 100%;
+	}
+	.my-proposition__banks .my-proposition__banks-header{
+		font-size: 31px;
 	}
 }
 @media only screen and (max-width: 550px){

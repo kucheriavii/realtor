@@ -11694,7 +11694,7 @@ strong {
     color: #fff;
   }
   .reasons-to-trust .reasons-to-trust__fon-wrap {
-    padding-bottom: 120px;
+    padding-bottom: 40px;
   }
   .reasons-to-trust__ad {
     -webkit-box-pack: center;
@@ -11966,7 +11966,7 @@ strong {
   .landscape .re-hash {
     min-height: 400px;
   }
-  .landscape .interesting-things__header, .landscape .map .map-contacts .map-header, .landscape .feedback h2.feedback__header, .landscape .about-me__block .info h3, .landscape .reasons-block .reasons-to-trust__header, .landscape .re-hash__header, .landscape .additional-options .additional-options__content-header, .landscape .most-important-things__header, .landscape .reasons-block .reasons-to-trust__header .gray-text, .landscape .attention .attention__header, .landscape .attention .important-thing .important-head, .landscape .calculator__header, .landscape .my-proposition__banks .my-proposition__banks-header {
+  .landscape .interesting-things__header, .landscape .map .map-contacts .map-header, .landscape .feedback h2.feedback__header, .landscape .about-me__block .info h3, .landscape .reasons-block .reasons-to-trust__header, .landscape .re-hash__header, .landscape .additional-options .additional-options__content-header, .landscape .most-important-things__header, .landscape .reasons-block .reasons-to-trust__header .gray-text, .landscape .attention .attention__header, .landscape .attention .important-thing .important-head, .landscape .calculator__header, .landscape .my-proposition__banks .my-proposition__banks-header, .landscape .my-proposition__banks .my-proposition__banks-header {
     font-size: 22px;
     line-height: 35px;
     text-align: center;
@@ -12558,6 +12558,21 @@ strong {
   }
   .news__item {
     margin: 15px 5px;
+  }
+  .my-proposition__banks .my-proposition__banks-list, .my-proposition__banks {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .my-proposition__banks .my-proposition__banks-list .my-proposition__bank {
+    width: 100%;
+  }
+  .my-proposition__banks .my-proposition__banks-header {
+    font-size: 31px;
   }
 }
 
