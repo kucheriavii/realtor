@@ -11589,6 +11589,9 @@ strong {
 }
 
 @media (max-width: 1023.98px) {
+  .article-content .article__header {
+    font-size: 22px;
+  }
   .tablet-none {
     display: none;
   }

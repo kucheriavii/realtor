@@ -344,7 +344,9 @@
 
 // ≥1024px
 @include media-breakpoint-down(md) {
-
+	.article-content .article__header{
+		font-size: 22px;
+	}
 	.tablet-none{
 		display: none;
 		&.active{
