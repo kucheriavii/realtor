@@ -128,7 +128,7 @@ $('.article__video')[0].play();
 	if (isIOS) {
 
 
-			var video = '<video class="video js-video" muted><source src="video/test.mp4" type="video/mp4">Your browser does not support HTML5 video.</video> ';
+			var video = '<video class="video js-video" muted><source src="video/fon.mp4" type="video/mp4">Your browser does not support HTML5 video.</video> ';
 			var canvas = '<canvas class="canvas js-canvas"></canvas>';
 			var timeline = '<div class="video-timeline js-timeline"><div class="video-timeline-passed js-timeline-passed"></div></div>';
 			$('.iphone-video').addClass('iphone-on').append(video, canvas, timeline);
@@ -252,10 +252,21 @@ $('.article__video')[0].play();
 function fixedPriceInCalculator(){
 	var start = $('.calculator__parameters-base-rate').offset().top-95;
 	var finish = $('.attention').offset().top-400;
+	if(isMobile(900)){
+		finish = $('.attention').offset().top-250;
+	}
+	if(isMobile(500)){
+		finish = $('.attention').offset().top-900;
+		start-=300;
+	}
+	if(isMobile(400)){
+		finish = $('.attention').offset().top;
+	}
 	$(document).on('scroll', function(e){
 		var distance = $('.calculator__parameters-base-rate').offset().top;
 		var position = $(document).scrollTop();
 		var bottomStop = $('.attention').offset().top+$(window).height()+$('.attention').height()
+
 
 		if(position>start){
 			$('.calculator__parameters-base-rate').addClass('fix');
