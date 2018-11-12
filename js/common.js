@@ -146,7 +146,7 @@ $('.article__video')[0].play();
 		});
 
 
-		setInterval(function(){canvasVideo.play();}, 1000);
+		setInterval(function(){canvasVideo.play();}, 7000);
 
 	}
 
