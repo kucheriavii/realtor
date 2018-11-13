@@ -483,7 +483,7 @@ function popup(){
 	    });
 	})
 	$(document).on('click','.close', function(){
-		$('.popap__wrapper').fadeOut(300);
+		$('.popap__wrapper').fadeOut(300).removeClass('thk-wrapper');
 		$('.popup').fadeOut();
 		$('.popup-thk').fadeOut();
 		$.scrollify.enable();
@@ -493,6 +493,7 @@ function popup(){
 		e.preventDefault();
 		$('.popup').fadeOut();
 		$('.popup-thk').fadeIn();
+		$('.popap__wrapper').addClass('thk-wrapper');
 	})
 }
 

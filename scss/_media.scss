@@ -340,6 +340,18 @@
 	.news__item{
 		 margin: 15px 40px;
 	}
+	.right-clc .calculator__option-name{
+		font-family: "montserrat", sans-serif !important;
+	}
+	.popap__wrapper .popup-thk .tnk-block {
+    top: initial;
+    bottom: 74px;
+    max-width: 90%;
+    margin: 0 auto;
+    justify-self: center;
+    left: 50%;
+    transform: translateX(-50%);
+	}
 }
 
 // ≥1024px
@@ -742,6 +754,29 @@
 			.info{
 				width: 100%;
 			}
+		}
+	}
+
+	.right-clc .calculator__option-name{
+		font-family: "montserrat", sans-serif;
+	}
+	.thk-wrapper{
+		background-color: rgba(255,255,255,0.1);
+		overflow: auto;
+		transition: all .5s;
+		.close{
+			position: fixed;
+	    right: 20px;
+	    top: 7px;
+	    z-index: 999;
+	    cursor: pointer;
+	    background: #fff;
+	    height: 30px;
+	    width: 30px;
+	    text-align: center;
+	    border-radius: 50%;
+	    border: 3px solid #f00;
+	    line-height: 20px;
 		}
 	}
 
@@ -1292,8 +1327,86 @@
 	.my-proposition__banks .my-proposition__banks-header{
 		font-size: 31px;
 	}
+	.right-clc .calculator__option-name{
+		max-width: 100%;
+		.itl{
+			margin: 0 auto;
+		}
+	}
+	.calculator__header, .calculator__option-name, .calculator__option-panel,.calculator__option-long .calculator__option-name{
+		margin: 0 auto;
+	}
+	.calculator__option-panel{
+		margin-bottom: 15px;
+	}
+	.right-clc .calculator__option-panel {
+    width: 90px;
+    max-width: 90%;
+    min-width: 90%;
+    margin: 0 auto;
+	}
+	.calculator .right-clc{
+		margin: 0;
+	}
+	.calculator__option-long:first-child{
+		margin: 0;
+	}
+	.calculator .calculator__option-long{
+		margin: 0;
+	}
+	.right-clc .calculator__option-name{
+		margin: 0;
+	}
+	.calculator .calculator__option-long:first-child{
+		margin-top: 15px;
+	}
+	.popup-free-sell .popup__inputs-wrap .input-error, .popup-ask .popup__inputs-wrap .input-error{
+		position: static;
+		top: 0;
+		left: 100%;
+		width: auto;
+		margin-left: 20px;
+		overflow: hidden;
+		height: 2em;
+		color: #e77051;
+		margin-top: 0px;
+		display: block;
+		margin-top: -13px;
+	}
+	.popup-free-sell .popup__inputs-wrap .textareawrap, .popup-ask .popup__inputs-wrap .textareawrap{
+		margin-bottom: 13px;
+	}
+	.popup-free-sell .button, .popup-ask .button{
+		max-width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.popup .popup__name {
+    font-family: "montserrat-regular", sans-serif;
+    font-size: 21px;
+    line-height: 30px;
+    color: #20202b;
+    font-weight: 500;
+    text-align: center;
+    font-weight: bold;
+	}
+	.popup-free-sell .popup__user-data-text, .popup-ask .popup__user-data-text{
+		margin-top: 20px;
+	}
+	.popap__wrapper .popup-thk{
+		min-height: 600px;
+	}
+
 }
 @media only screen and (max-width: 550px){
+	.popap__wrapper .popup-thk{
+		min-height: 570px;
+		max-height: 600px;
+	}
+	.popup-thk .tnk-block .thk-text {
+    height: 300px;
+		font-size: 14px;
+	}
 
 	.article-content .article__text-block {
 	    -webkit-flex-wrap: wrap;
@@ -1389,6 +1502,9 @@
 		.map-messengers .map-messengers-link img{
 		    filter: grayscale(0%);
 		}
+	}
+	.popup-thk .tnk-block .thk-text{
+		height: 260px;
 	}
 }
 // ≥480px
