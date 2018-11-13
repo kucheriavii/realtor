@@ -353,7 +353,7 @@
 			padding-left: 10px;
 			padding-right: 10px;
 			color: #20202b;
-			font: 14px/40px "opensans-regular";	
+			font: 14px/40px "opensans-regular";
 			&[type='radio']{
 				display: none;
 			}
@@ -361,7 +361,7 @@
 				color: #7e89a1;
 				padding-left: 10px;
 				padding-right: 10px;
-				font: 14px/40px "opensans-regular";	
+				font: 14px/40px "opensans-regular";
 			}
 		}
 		.input-wrap{
@@ -376,7 +376,7 @@
 			position: relative;
 			textarea{
 				color: #7e89a1;
-				font: 14px/40px "opensans-regular";	
+				font: 14px/40px "opensans-regular";
 				height: 120px;
 				width: 90%;
 				border: none;
@@ -405,7 +405,7 @@
 		    width: 310px;
 		    margin-left: 20px;
 		    overflow: hidden;
-		    height: 2em;
+		    min-height: 2em;
 		    color: #e77051;
 		}
 		.input-choose{
@@ -413,7 +413,7 @@
 			background-image: url("../img/icons/png/arrow-down.png");
 			background-repeat: no-repeat;
 			background-position: 97% 50%;
-			font: 14px/40px "opensans-regular";	
+			font: 14px/40px "opensans-regular";
 			&:hover,&:active,&:focus{
 				background-color: #f0f3fa;
 			}

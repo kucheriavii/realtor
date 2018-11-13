@@ -783,6 +783,9 @@
 
 }
 @media only screen and (max-width: 1023px){
+	.popup-free-sell .popup__inputs-wrap .textareawrap, .popup-ask .popup__inputs-wrap .textareawrap{
+		margin-bottom: 13px;
+	}
 	.about-me__block .info {
 		width: 100%;
 		background: none;
@@ -1367,7 +1370,8 @@
 		width: auto;
 		margin-left: 20px;
 		overflow: hidden;
-		height: 2em;
+		min-height: 2em;
+		height: auto;
 		color: #e77051;
 		margin-top: 0px;
 		display: block;
@@ -1376,7 +1380,7 @@
 	.popup-free-sell .popup__inputs-wrap .textareawrap, .popup-ask .popup__inputs-wrap .textareawrap{
 		margin-bottom: 13px;
 	}
-	.popup-free-sell .button, .popup-ask .button{
+	.popup-free-sell .button, .popup-ask .button,.popup-free-sell .popup__inputs-wrap input.button-free-sell{
 		max-width: 80%;
 		margin-left: auto;
 		margin-right: auto;
