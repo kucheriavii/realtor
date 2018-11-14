@@ -31,7 +31,9 @@ $(function() {
 	//end of article scripts
 	//background preloader
 	//$('.main-screen').css('background-image', 'url(../video/fon.png)');
-
+	if(isMobile(1200)){
+		rotateScreen();
+	}
 	if(isMobile(1200)){
 		tips(); //most inportant thing
 	}
@@ -249,6 +251,11 @@ $('.article__video')[0].play();
 
 
 });
+function rotateScreen(){
+		$(window).on("orientationchange",function(){
+	  location.reload();
+	});
+}
 function fixedPriceInCalculator(){
 	var start = $('.calculator__parameters-base-rate').offset().top-95;
 	var finish = $('.attention').offset().top-400;
@@ -260,6 +267,7 @@ function fixedPriceInCalculator(){
 		start-=300;
 	}
 	if(isMobile(400)){
+		start = $('.calculator__parameters-base-rate').offset().top-200;
 		finish = $('.attention').offset().top;
 	}
 	$(document).on('scroll', function(e){
@@ -486,7 +494,7 @@ function popup(){
 		$('.popap__wrapper').fadeOut(300).removeClass('thk-wrapper');
 		$('.popup').fadeOut();
 		$('.popup-thk').fadeOut();
-		$.scrollify.enable();
+		//$.scrollify.enable();
 	})
 
 	$(document).on('click','.popup .button', function(e){

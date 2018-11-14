@@ -13561,4 +13561,30 @@ strong {
   }
 }
 
+@media (max-width: 320.98px) {
+  .section.re-hash {
+    max-width: 320px !important;
+    overflow: hidden !important;
+  }
+  .my-proposition__banks .my-proposition__banks-list, .my-proposition__banks {
+    /*min-height: 1150px!important;*/
+    min-height: auto !important;
+  }
+  .reasons-to-trust__BTI {
+    margin-bottom: 15px;
+  }
+}
+
+/**iOS do not madrashzhut. Need to be deleted***/
+@media (max-width: 450.98px) {
+  .main-screen {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .positive-flat, .main-page {
+    height: 500px;
+  }
+}
+
 /*==========  Mobile First  ==========*/
