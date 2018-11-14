@@ -13577,8 +13577,12 @@ strong {
 
 /**iOS do not madrashzhut. Need to be deleted***/
 @media (max-width: 450.98px) {
+  .about-me__block {
+    padding-top: 15px;
+  }
   .main-screen {
     height: 300px;
+    margin-bottom: 20px;
     width: 100%;
     overflow: hidden;
   }
