@@ -2142,6 +2142,11 @@
 	.my-proposition__banks .my-proposition__banks-list, .my-proposition__banks{
 		/*min-height: 1150px!important;*/
 		min-height: auto !important;
+		min-height: 550px !important;
+		margin-bottom: 15px;
+		overflow: hidden;
+		display: flex;
+		text-align: center;
 	}
 	.reasons-to-trust__BTI{
 		margin-bottom: 15px;
