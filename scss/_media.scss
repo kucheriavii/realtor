@@ -2134,29 +2134,72 @@
 		font-family: "montserrat", sans-serif;
 	}
 }
+@media (max-width: 1024.98px){
+	.apple .main-screen,.apple .positive-flat{
+		min-height: 1005px;
+		max-height: 1005px;
+	}
+	.apple .calculator__parameters-base-rate.fix{
+		position: static;
+	}
+}
+@media (max-width: 1023.98px){
+	.apple .main-screen,.apple .positive-flat{
+		min-height: 100vh;
+		max-height: 100vh;
+	}
+}
+
 @media (max-width: 320.98px){
-	.section.re-hash{
-		max-width: 320px!important;
-		overflow: hidden!important;
+	.apple .main-screen,.apple .positive-flat{
+		min-height: 500px;
+		max-height: 500px;
 	}
-	.my-proposition__banks .my-proposition__banks-list, .my-proposition__banks{
-		/*min-height: 1150px!important;*/
-		min-height: auto !important;
-		min-height: 550px !important;
-		margin-bottom: 15px;
-		overflow: hidden;
-		display: flex;
-		text-align: center;
+	.thk-wrapper .close{
+		right: 45px;
+		top: 50px;
 	}
-	.reasons-to-trust__BTI{
-		margin-bottom: 15px;
+	.apple{
+
+		.section.re-hash{
+			max-width: 320px!important;
+			overflow: hidden!important;
+		}
+		.my-proposition__banks .my-proposition__banks-list, .my-proposition__banks{
+			/*min-height: 1150px!important;*/
+			min-height: auto !important;
+			min-height: 550px !important;
+			margin-bottom: 15px;
+			overflow: hidden;
+			display: flex;
+			text-align: center;
+		}
+		.reasons-to-trust__BTI{
+			margin-bottom: 15px;
+		}
+		.main-screen,.main-page{
+			height: 500px !important;
+			margin-bottom: 0px;
+			width: 100%;
+			overflow: hidden;
+		}
+		.calculator__parameters-base-rate.fix{
+			position: static;
+		}
+
+		.my-proposition__banks .my-proposition__banks-list, .my-proposition__banks{
+			display: inline-block;
+			text-align: center;
+		}
+		.my-proposition__banks-list .my-proposition__bank {
+			width: 100%;
+			display: inline-block !important;
+			text-align: center;
+		}
 	}
-	.main-screen,.main-page{
-		max-height: 400px;
-		margin-bottom: 0px;
-		width: 100%;
-		overflow: hidden;
-	}
+
+
+
 }
 /**iOS do not madrashzhut. Need to be deleted***/
 @media (max-width: 450.98px){

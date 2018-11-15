@@ -147,6 +147,8 @@ $('.article__video')[0].play();
 			resetOnLastFrame: true,
 		});
 
+		$('body').addClass('apple');
+		$('.calculator__parameters-base-rate').appendTo('.calculator__option-long.second-marketplace')
 		setInterval(function(){canvasVideo.play(); players}, 10000);
 
 	}
