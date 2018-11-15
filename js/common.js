@@ -147,7 +147,7 @@ $('.article__video')[0].play();
 			resetOnLastFrame: true,
 		});
 
-		//setInterval(function(){canvasVideo.play(); players}, 10000);
+		setInterval(function(){canvasVideo.play(); players}, 10000);
 
 	}
 
