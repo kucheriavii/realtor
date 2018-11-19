@@ -84,8 +84,14 @@
 	}
 	.about-me{
 		background-image: url("../img/about-me-background-fon-test.jpg");
+		background-image: none;
+		.about-me__block{
+			flex-wrap: wrap;
+		}
 		.info{
 			width: 500px;
+			width: 100%;
+			height: auto;
 		}
 	}
 	.most-important-things__item.left-item,
@@ -570,6 +576,9 @@
 	.about-me{
 		background-image: url('../img/Main_mobile.jpg');
 	}
+	.about-me__pic-wrap{
+		display: none;
+	}
 	.about-me__block{
 		justify-content: flex-end;
 		.info{
@@ -588,6 +597,7 @@
 	}
 	.about-me__block .info{
 		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 	.additional-options .additional-options__img-bg {
     position: absolute;
@@ -2135,6 +2145,11 @@
 	}
 }
 @media (max-width: 1024.98px){
+	.apple{
+		canvas{
+			overflow: hidden;
+		}
+	}
 	.apple .main-screen,.apple .positive-flat{
 		min-height: 1005px;
 		max-height: 1005px;

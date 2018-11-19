@@ -557,3 +557,8 @@
 		position: absolute;
 	}
 }
+.popap__wrapper.thk-wrapper{
+	background-color: rgba(255,255,255,0.1);
+	overflow: auto;
+	transition: all .5s;
+}

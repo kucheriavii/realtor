@@ -145,6 +145,7 @@ $('.article__video')[0].play();
 			autoplay: true,
 			loop: true,
 			resetOnLastFrame: true,
+			framesPerSecond: 60,
 		});
 
 		$('body').addClass('apple');

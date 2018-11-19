@@ -7846,10 +7846,13 @@ strong {
   height: calc(100vh - 75px);
   min-height: auto;
   background-image: url("../img/about-me-background.jpg");
+  background-image: none;
+  background: #514e59;
   background-position-y: 50%;
   -webkit-background-size: cover;
           background-size: cover;
   width: 100%;
+  height: auto;
 }
 
 .about-me .container, .about-me .row {
@@ -7858,6 +7861,7 @@ strong {
 
 .about-me__block {
   height: 100vh;
+  height: auto;
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -7877,6 +7881,7 @@ strong {
   padding-top: 25px;
   padding-bottom: 57px;
   height: 100%;
+  width: 100%;
 }
 
 .about-me__block .info h3 {
@@ -7955,6 +7960,15 @@ strong {
   opacity: 0;
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
+}
+
+.about-me__pic-wrap img {
+  width: 100%;
+}
+
+.about-me__block .info {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .reasons-to-trust {
@@ -10656,6 +10670,14 @@ strong {
   position: absolute;
 }
 
+.popap__wrapper.thk-wrapper {
+  background-color: rgba(255, 255, 255, 0.1);
+  overflow: auto;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
 .article-page .main-navbar--fixed {
   position: fixed;
   display: -webkit-box;
@@ -11180,14 +11202,20 @@ strong {
   position: fixed;
   width: 90%;
   min-height: 90%;
-  left: 5%;
-  top: 5%;
+  /* left: 5%; */
+  /* top: 5%; */
   z-index: 999;
   background-color: white;
   overflow: auto;
   padding-bottom: 20px;
   display: none;
   overflow: hidden;
+  max-width: 1000px;
+  left: 50%;
+  top: 5%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .popap__wrapper .close {
@@ -11319,9 +11347,17 @@ strong {
   }
   .about-me {
     background-image: url("../img/about-me-background-fon-test.jpg");
+    background-image: none;
+  }
+  .about-me .about-me__block {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
   }
   .about-me .info {
     width: 500px;
+    width: 100%;
+    height: auto;
   }
   .most-important-things__item.left-item,
   .most-important-things__item.center-item,
@@ -11857,6 +11893,9 @@ strong {
   .about-me {
     background-image: url("../img/Main_mobile.jpg");
   }
+  .about-me__pic-wrap {
+    display: none;
+  }
   .about-me__block {
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
@@ -11878,6 +11917,7 @@ strong {
   }
   .about-me__block .info {
     padding-top: 20px;
+    padding-bottom: 20px;
   }
   .additional-options .additional-options__img-bg {
     position: absolute;
@@ -13562,6 +13602,9 @@ strong {
 }
 
 @media (max-width: 1024.98px) {
+  .apple canvas {
+    overflow: hidden;
+  }
   .apple .main-screen, .apple .positive-flat {
     min-height: 1005px;
     max-height: 1005px;

@@ -3,15 +3,19 @@
 	height: calc(100vh - 75px);
 	min-height: auto;
 	background-image: url("../img/about-me-background.jpg");
+	background-image: none;
+	background: #514e59;
 	background-position-y: 50%;
 	background-size: cover;
 	width: 100%;
+	height: auto;
 	.container, .row{
 		height: 100%;
 	}
 }
 .about-me__block{
 	height: 100vh;
+	height: auto;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -23,6 +27,7 @@
 		padding-top: $pTop;
 		padding-bottom: 57px;
 		height: 100%;
+		width: 100%;
 		h3{
 			font: 40px "montserrat-regular", sans-serif;
 			font-weight: 500;
@@ -85,4 +90,11 @@
 		opacity: 0;
 		animation-delay: 1.6s;
 	}
+}
+.about-me__pic-wrap img{
+	width: 100%;
+}
+.about-me__block .info{
+	padding-top: 0;
+	padding-bottom: 0;
 }
